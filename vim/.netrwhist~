@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/powersurge/work-projects/jostens/wordpress/htdocs/wp-content/themes/jostens/timecapsule'
+let g:netrw_dirhist_2='/home/powersurge/work-projects/jostens/wordpress/htdocs/wp-content/themes/jostens/timecapsule/assets'
+let g:netrw_dirhist_3='/home/powersurge/work-projects/jostens/wordpress/htdocs/wp-content/themes/jostens/timecapsule/assets/js'
+let g:netrw_dirhist_4='/home/powersurge/work-projects/jostens/wordpress/htdocs/wp-content/themes/jostens/timecapsule/assets/js/models'
+let g:netrw_dirhist_5='/home/powersurge/work-projects/jostens/wordpress/htdocs/wp-content/themes/jostens/timecapsule/assets/js/applications'
+let g:netrw_dirhist_6='/home/powersurge/work-projects/jostens/wordpress/htdocs/wp-content/themes/jostens/timecapsule'
+let g:netrw_dirhist_7='/home/powersurge/work-projects/jostens/wordpress/htdocs/wp-content/themes/jostens/timecapsule/assets'

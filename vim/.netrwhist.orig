@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/powersurge/yankee/public_html/tolo/library/Tol'
+let g:netrw_dirhist_2='/home/powersurge/yankee/public_html/tolo/library/Tol/Controller'
+let g:netrw_dirhist_3='/home/powersurge/yankee/public_html/tolo/library/Tol/Controller/Action'
+let g:netrw_dirhist_4='/home/powersurge/yankee/public_html/tolo/library/Tol/Controller/Action/Helper'
