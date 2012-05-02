@@ -29,7 +29,7 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git django pip npm python)
+plugins=(git django pip npm python command-not-found github)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -41,6 +41,5 @@ source /usr/local/bin/virtualenvwrapper.sh
 export EDITOR="vim"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-
 
 export NODE_PATH="/usr/local/lib/node_modules"

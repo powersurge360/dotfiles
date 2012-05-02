@@ -1,8 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/powersurge/projects/apts247/247'
-let g:netrw_dirhist_2='/home/powersurge/projects/apts247/247/settings'
-let g:netrw_dirhist_3='/home/powersurge/projects/apts247/247/apps247'
-let g:netrw_dirhist_4='/home/powersurge/projects/apts247/247/apps247/amenities'
-let g:netrw_dirhist_5='/home/powersurge/projects/apts247/247/coverage'
-let g:netrw_dirhist_6='/home/powersurge/projects/apts247/247/apps247'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/powersurge/1000'
+let g:netrw_dirhist_2='/home/powersurge'
+let g:netrw_dirhist_3='/home'
