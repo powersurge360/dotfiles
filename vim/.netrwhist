@@ -1,5 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/home/powersurge/1000'
-let g:netrw_dirhist_2='/home/powersurge'
-let g:netrw_dirhist_3='/home'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/home/powersurge/projects/apts247/247/apps247/amenities'
+let g:netrw_dirhist_2='/home/powersurge/projects/apts247/247/apps247/amenities/views'

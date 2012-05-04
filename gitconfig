@@ -1,0 +1,12 @@
+[user]
+	name = Kevin Diale
+	email = powersurge360@gmail.com
+[core]
+	excludesfile = /home/powersurge/.gitignore
+[diff]
+	tool = vimdiff
+	prompt = false
+[alias]
+	d = difftool
+[difftool]
+	prompt = false

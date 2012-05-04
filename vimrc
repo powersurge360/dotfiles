@@ -21,3 +21,5 @@ set directory=$HOME/tmp
 autocmd FileType make setlocal noexpandtab
 
 call pathogen#infect()
+
+:nnoremap <F5> :GundoToggle<CR>
