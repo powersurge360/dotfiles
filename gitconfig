@@ -10,3 +10,5 @@
 	d = difftool
 [difftool]
 	prompt = false
+[push]
+	default = current
