@@ -1,9 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/home/powersurge/projects/apts247/247/staticfiles'
-let g:netrw_dirhist_2='/home/powersurge/projects/apts247/247/staticfiles/css'
-let g:netrw_dirhist_3='/home/powersurge/projects/apts247/247/apps247/generic'
-let g:netrw_dirhist_4='/home/powersurge/projects/apts247/247'
-let g:netrw_dirhist_5='/home/powersurge/projects/apts247/247/apps247'
-let g:netrw_dirhist_6='/home/powersurge/projects/apts247/247/apps247/generic'
-let g:netrw_dirhist_7='/home/powersurge/projects/apts247/247'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/powersurge/projects/construct_fire/fireblog/fixtures'
+let g:netrw_dirhist_2='/home/powersurge/projects/apts247/.git'
+let g:netrw_dirhist_3='/home/powersurge/.oh-my-zsh'
