@@ -4,16 +4,16 @@
 :set smarttab
 :set foldmethod=indent
 :retab
-:colorscheme evening
+:set t_Co=256
+:colorscheme torte
 :filetype on
 :filetype plugin on
 :set tabstop=4
 :set shiftwidth=4
 :set cc=79
-:set formatoptions=croql
+:set rnu
+:set ls=2
 
-:au FileType ruby set tabstop=2 shiftwidth=2
-:au FileType lisp set tabstop=2 shiftwidth=2
 :au BufRead,BufNewFile *.json set ft=json
 :au BufRead,BufNewFile *.md set ft=markdown
 

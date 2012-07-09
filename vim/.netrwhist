@@ -1,7 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/powersurge/.local/share/Psychonauts'
-let g:netrw_dirhist_2='/usr/local/share'
-let g:netrw_dirhist_3='/home/powersurge/projects/toast/toast/nutrition'
-let g:netrw_dirhist_4='/home/powersurge/.tmuxinator'
-let g:netrw_dirhist_5='/home/powersurge/projects/toast'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/powersurge/projects/construct_fire/fireblog/static/bootstrap/js'
+let g:netrw_dirhist_2='/home/powersurge/projects/construct_fire/fireblog/static/bootstrap'
+let g:netrw_dirhist_3='/home/powersurge/projects/construct_fire/fireblog/static'
+let g:netrw_dirhist_4='/home/powersurge/projects/construct_fire/fireblog/static/css'
+let g:netrw_dirhist_5='/home/powersurge/projects/construct_fire'
+let g:netrw_dirhist_6='/home/powersurge/projects/apts247'
