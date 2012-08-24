@@ -1,7 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/powersurge/projects/toast/toast'
-let g:netrw_dirhist_2='/home/powersurge/projects/apts247/247/coverage'
-let g:netrw_dirhist_3='/home/powersurge/projects/apts247/247/apps247/newsletter'
-let g:netrw_dirhist_4='/home/powersurge/projects/apts247/247/apps247/newsletters'
-let g:netrw_dirhist_5='/home/powersurge/projects/apts247/247/staticfiles/cms/img/icons'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/powersurge/projects/apts247/247/staticfiles/images'
+let g:netrw_dirhist_2='/home/powersurge/projects/apts247/247/staticfiles/images/map_icons'
+let g:netrw_dirhist_3='/home/powersurge/projects/apts247/.git'
+let g:netrw_dirhist_4='/home/powersurge/projects/apts247'
+let g:netrw_dirhist_5='/home/powersurge/projects/apts247/247/apps247/blogs'
+let g:netrw_dirhist_6='/home/powersurge/projects/apts247/247/apps247/blogs/tests'

@@ -16,6 +16,7 @@
 
 :au BufRead,BufNewFile *.json set ft=json
 :au BufRead,BufNewFile *.md set ft=markdown
+:au BufRead,BufNewFile *.html set ft=htmldjango
 
 set directory=$HOME/tmp
 autocmd FileType make setlocal noexpandtab
