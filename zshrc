@@ -38,14 +38,20 @@ source $ZSH/oh-my-zsh.sh
 export WORKON_HOME="~/.virtualenvs"
 source /usr/local/bin/virtualenvwrapper.sh
 
+export force_s3tc_enable=true
 export EDITOR="vim"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 export NODE_PATH="/usr/local/lib/node_modules"
 
-export force_s3tc_enable=true
 if [ $TERM = "xterm" ]
 then
     export TERM="xterm-256color"
 fi
+
+export PATH="$HOME/bin:$PATH"
+
+export CLASSPATH="."
+
+[[ -e $HOME/.android ]] && export PATH="$HOME/.android/platform-tools:$HOME/.android/tools:$PATH"
