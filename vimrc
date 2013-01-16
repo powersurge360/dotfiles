@@ -19,6 +19,8 @@
 :au BufRead,BufNewFile *.html set ft=htmldjango
 :au BufRead,BufNewFile *.rb setlocal tabstop=2
 :au BufRead,BufNewFile *.rb setlocal shiftwidth=2
+:au BufRead,BufNewFile Gemfile setlocal tabstop=2
+:au BufRead,BufNewFile Gemfile setlocal shiftwidth=2
 :au BufRead,BufNewFile *.coffee setlocal tabstop=2
 :au BufRead,BufNewFile *.coffee setlocal shiftwidth=2
 
