@@ -55,3 +55,6 @@ export PATH="$HOME/bin:$PATH"
 export CLASSPATH="."
 
 [[ -e $HOME/.android ]] && export PATH="$HOME/.android/platform-tools:$HOME/.android/tools:$PATH"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

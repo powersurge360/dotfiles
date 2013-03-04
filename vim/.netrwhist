@@ -1,2 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/powersurge/projects/firelightweb.com/fw/staticfiles/stylesheets'
+let g:netrw_dirhist_2='/home/powersurge/projects/firelightweb.com/fw/staticfiles'
+let g:netrw_dirhist_3='/home/powersurge/projects/firelightweb.com/.git'
+let g:netrw_dirhist_4='/home/powersurge/projects/share_shopping/.git'
+let g:netrw_dirhist_5='/home/powersurge/projects/share_search/.git'
+let g:netrw_dirhist_6='/home/powersurge/projects/share_search'

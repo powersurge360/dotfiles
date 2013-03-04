@@ -19,3 +19,6 @@
 [submodule "vim/bundle/zencoding"]
 	path = vim/bundle/zencoding
 	url = http://github.com/mattn/zencoding-vim.git
+[submodule "gnome-shell-google-calendar"]
+	path = gnome-shell-google-calendar
+	url = git://github.com/vintitres/gnome-shell-google-calendar.git
