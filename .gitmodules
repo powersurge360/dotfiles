@@ -40,3 +40,6 @@
 [submodule "vim/bundle/css3"]
 	path = vim/bundle/css3
 	url = git://github.com/hail2u/vim-css3-syntax.git
+[submodule "vim/bundle/gitgutter"]
+	path = vim/bundle/gitgutter
+	url = git://github.com/airblade/vim-gitgutter.git

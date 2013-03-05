@@ -11,7 +11,7 @@
 :set tabstop=4
 :set shiftwidth=4
 :set cc=79
-:set rnu
+:set nu
 :set ls=2
 
 set directory=$HOME/tmp
