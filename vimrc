@@ -14,6 +14,8 @@
 :set nu
 :set ls=2
 
+highlight clear SignColumn
+
 set directory=$HOME/tmp
 autocmd FileType make setlocal noexpandtab
 
