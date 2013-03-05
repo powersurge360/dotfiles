@@ -23,8 +23,6 @@
 :au BufRead,BufNewFile Gemfile setlocal shiftwidth=2
 :au BufRead,BufNewFile *.erb setlocal tabstop=2
 :au BufRead,BufNewFile *.erb setlocal shiftwidth=2
-:au BufRead,BufNewFile *.coffee setlocal tabstop=2
-:au BufRead,BufNewFile *.coffee setlocal shiftwidth=2
 
 set directory=$HOME/tmp
 autocmd FileType make setlocal noexpandtab
