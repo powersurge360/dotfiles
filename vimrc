@@ -17,6 +17,8 @@
 set directory=$HOME/tmp
 autocmd FileType make setlocal noexpandtab
 
+au BufNewFile,BufRead *.html setlocal filetype=htmldjango
+
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 
 call pathogen#infect()
