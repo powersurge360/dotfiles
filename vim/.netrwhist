@@ -1,2 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/powersurge/Documents'
+let g:netrw_dirhist_2='/home/powersurge/projects/My-Essilor-Labs'
+let g:netrw_dirhist_3='/home/powersurge/projects/My-Essilor-Labs/myessilorlabs'
+let g:netrw_dirhist_4='/home/powersurge/projects/My-Essilor-Labs/myessilorlabs/programs'
+let g:netrw_dirhist_5='/home/powersurge/projects/My-Essilor-Labs/myessilorlabs/programs/digitalclub'
