@@ -50,7 +50,7 @@ then
     export TERM="xterm-256color"
 fi
 
-export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/bin:$PATH:/usr/local/share/npm/bin"
 export PATH="$HOME/bin:$PATH"
 
 export CLASSPATH="."
