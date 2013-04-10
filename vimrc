@@ -18,7 +18,7 @@ map k gk
 
 highlight clear SignColumn
 
-set directory=$HOME/tmp
+set directory=/tmp
 autocmd FileType make setlocal noexpandtab
 
 au BufNewFile,BufRead *.html setlocal filetype=htmldjango
