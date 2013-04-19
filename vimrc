@@ -15,6 +15,7 @@ set nu
 set ls=2
 map j gj
 map k gk
+set backspace=2
 
 highlight clear SignColumn
 

@@ -36,7 +36,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 export WORKON_HOME="~/.virtualenvs"
-#source /usr/local/bin/virtualenvwrapper.sh
+[[ -e /usr/local/bin/virtualenvwrapper.sh ]] && source /usr/local/bin/virtualenvwrapper.sh
 
 export force_s3tc_enable=true
 export EDITOR="vim"

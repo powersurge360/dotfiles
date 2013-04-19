@@ -1,7 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/home/powersurge/projects/carnes_vending/carnes_vending/staticfiles/js'
 let g:netrw_dirhist_2='/home/powersurge/projects/carnes_vending/carnes_vending/staticfiles/js/vendor'
 let g:netrw_dirhist_3='/home/powersurge/projects/carnes_vending/carnes_vending/staticfiles/js'
 let g:netrw_dirhist_4='/home/powersurge/projects/carnes_vending/carnes_vending/staticfiles/js/foundation'
 let g:netrw_dirhist_5='/home/powersurge/.weechat'
+let g:netrw_dirhist_6='/Users/kevin/.ssh'
+let g:netrw_dirhist_7='/Users/kevin/Downloads'
