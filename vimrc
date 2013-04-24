@@ -19,6 +19,7 @@ set ls=2
 map j gj
 map k gk
 set backspace=2
+set splitbelow
 
 highlight clear SignColumn
 
