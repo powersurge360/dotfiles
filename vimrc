@@ -1,3 +1,5 @@
+call pathogen#infect()
+
 syntax on
 set expandtab
 set autoindent
@@ -5,7 +7,8 @@ set smarttab
 set foldmethod=indent
 retab
 set t_Co=256
-colorscheme torte
+set background=dark
+colorscheme jellybeans
 filetype on
 filetype plugin on
 set tabstop=4
@@ -34,5 +37,3 @@ au BufNewFile,BufRead *.markdown set linebreak
 au BufNewFile,BufRead *.markdown set nolist
 
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
-
-call pathogen#infect()
