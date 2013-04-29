@@ -36,5 +36,7 @@ au BufNewFile,BufRead *.markdown set spell
 au BufNewFile,BufRead *.markdown set wrap
 au BufNewFile,BufRead *.markdown set linebreak
 au BufNewFile,BufRead *.markdown set nolist
+au BufNewFile,BufRead *.java setlocal omnifunc=javacomplete#Complete
 
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+let g:syntastic_java_javac_config_file_enabled = 1
