@@ -1,6 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/Users/kevin/.android'
 let g:netrw_dirhist_2='/Users/kevin/.android/tools'
 let g:netrw_dirhist_3='/Users/kevin/.android'
 let g:netrw_dirhist_4='/Users/kevin/projects/eventful/bin'
+let g:netrw_dirhist_5='/Users/kevin/projects/androidSizes/androidSizes'

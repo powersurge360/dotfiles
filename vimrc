@@ -43,3 +43,4 @@ let g:syntastic_java_javac_config_file_enabled = 1
 let g:clang_user_options='|| exit 0'
 let g:clang_complete_auto = 1
 let g:clang_close_preview = 1
+let g:syntastic_objc_compiler = "clang"
