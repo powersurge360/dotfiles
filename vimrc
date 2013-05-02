@@ -1,3 +1,4 @@
+set rtp+=$GOROOT/misc/vim
 call pathogen#infect()
 
 syntax on

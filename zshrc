@@ -55,6 +55,8 @@ export PATH="$HOME/bin:$PATH"
 
 export CLASSPATH="."
 
+[[ -e /usr/local/go ]] && export GOROOT=/usr/local/go
+
 [[ -e $HOME/.android ]] && export PATH="$HOME/.android/platform-tools:$HOME/.android/tools:$PATH"
 
 ### Added by the Heroku Toolbelt
