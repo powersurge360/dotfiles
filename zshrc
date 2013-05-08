@@ -40,8 +40,6 @@ export WORKON_HOME="~/.virtualenvs"
 
 export force_s3tc_enable=true
 export EDITOR="vim"
-[[ -e $HOME/.rbenv ]] && export PATH="$HOME/.rbenv/bin:$PATH"
-[[ -e $HOME/.rbenv ]] && eval "$(rbenv init -)"
 
 export NODE_PATH="/usr/local/lib/node_modules"
 
@@ -52,6 +50,8 @@ fi
 
 export PATH="/usr/local/bin:$PATH:/usr/local/share/npm/bin"
 export PATH="$HOME/bin:$PATH"
+[[ -e $HOME/.rbenv ]] && export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
+[[ -e $HOME/.rbenv ]] && eval "$(rbenv init -)"
 
 export CLASSPATH="."
 
