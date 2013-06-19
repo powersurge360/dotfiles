@@ -55,7 +55,7 @@ export PATH="$HOME/bin:$PATH"
 
 export CLASSPATH="."
 
-[[ -e /usr/local/go ]] && export GOROOT=/usr/local/go
+[[ -e /usr/local/go ]] && export GOROOT=/usr/local/go && export PATH="/usr/local/go/bin":$PATH
 
 [[ -e $HOME/.android ]] && export PATH="$HOME/.android/platform-tools:$HOME/.android/tools:$PATH"
 

@@ -1,4 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/Users/kevin/projects/vision_louisville/vision_louisville'
-let g:netrw_dirhist_2='/Users/kevin/projects/androidSizes/logictests'
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/kevin/projects/vision_louisville/vision_louisville/staticfiles/stylesheets/fonts'
+let g:netrw_dirhist_2='/Users/kevin/projects/vision_louisville/vision_louisville/staticfiles/stylesheets/fonts/Riona Sans Complete'
+let g:netrw_dirhist_3='/Users/kevin/projects/personal_site/compass/stylesheets'
+let g:netrw_dirhist_4='/private/var/folders/yj/_k60hpg138l_0v904h6vhhb80000gq/T/v3Wtk6R'
+let g:netrw_dirhist_5='/Users/kevin/projects/vision_louisville/fabfile'
+let g:netrw_dirhist_6='/Users/kevin/.tmuxinator'
+let g:netrw_dirhist_7='/Users/kevin/projects/vision_louisville/fabfile'
