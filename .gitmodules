@@ -13,9 +13,6 @@
 [submodule "vim/bundle/coffeescript"]
 	path = vim/bundle/coffeescript
 	url = git://github.com/kchmck/vim-coffee-script.git
-[submodule "gnome-shell-google-calendar"]
-	path = gnome-shell-google-calendar
-	url = git://github.com/vintitres/gnome-shell-google-calendar.git
 [submodule "vim/bundle/vim-css-color"]
 	path = vim/bundle/vim-css-color
 	url = git://github.com/ap/vim-css-color.git
