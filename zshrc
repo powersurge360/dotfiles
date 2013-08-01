@@ -36,7 +36,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 export WORKON_HOME="~/.virtualenvs"
-[[ -e /usr/local/bin/virtualenvwrapper.sh ]] && source /usr/local/bin/virtualenvwrapper.sh
+[[ -e ~/.local/bin/virtualenvwrapper.sh ]] && source ~/.local/bin/virtualenvwrapper.sh
 
 export force_s3tc_enable=true
 export EDITOR="vim"
@@ -58,6 +58,8 @@ export CLASSPATH="."
 [[ -e /usr/local/go ]] && export GOROOT=/usr/local/go && export PATH="/usr/local/go/bin":$PATH
 
 [[ -e $HOME/.android ]] && export PATH="$HOME/.android/platform-tools:$HOME/.android/tools:$PATH"
+
+export PATH=~/.local/bin:$PATH
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
