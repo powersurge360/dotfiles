@@ -46,9 +46,6 @@
 [submodule "vim/bundle/jellybeans"]
 	path = vim/bundle/jellybeans
 	url = git://github.com/nanotech/jellybeans.vim.git
-[submodule "vim/bundle/javacomplete"]
-	path = vim/bundle/javacomplete
-	url = git://github.com/vim-scripts/javacomplete.git
 [submodule "vim/bundle/clang_complete"]
 	path = vim/bundle/clang_complete
 	url = https://github.com/Rip-Rip/clang_complete

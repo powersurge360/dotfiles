@@ -1,9 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/kevin/projects/vision_louisville/vision_louisville/staticfiles/stylesheets'
-let g:netrw_dirhist_2='/Users/kevin/projects/vision_louisville/vision_louisville/staticfiles/stylesheets/fonts'
-let g:netrw_dirhist_3='/Users/kevin/projects/vision_louisville/vision_louisville/staticfiles/stylesheets/fonts/Riona Sans Complete'
-let g:netrw_dirhist_4='/Users/kevin/projects/vision_louisville/vision_louisville/staticfiles/images'
-let g:netrw_dirhist_5='/home/powersurge/projects/django-admin2/example2'
-let g:netrw_dirhist_6='/home/powersurge/projects/django-admin2/example2/example2'
-let g:netrw_dirhist_7='/home/powersurge/.apache-tomcat-7.0.34'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/powersurge/dotfiles/vim'
+let g:netrw_dirhist_2='/home/powersurge/dotfiles/vim/autoload'
+let g:netrw_dirhist_3='/home/powersurge/dotfiles/vim'
+let g:netrw_dirhist_4='/home/powersurge/dotfiles/vim/bundle'
+let g:netrw_dirhist_5='/home/powersurge/dotfiles/vim/bundle/javacomplete'
+let g:netrw_dirhist_6='/home/powersurge/dotfiles/vim/bundle/javacomplete/autoload'

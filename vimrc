@@ -27,6 +27,13 @@ highlight clear SignColumn
 set directory=/tmp
 autocmd FileType make setlocal noexpandtab
 
+let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+let g:clang_user_options='|| exit 0'
+let g:clang_complete_auto = 1
+let g:clang_close_preview = 1
+let g:syntastic_objc_compiler = "clang"
+let g:syntastic_java_checkers = []
+
 au BufNewFile,BufRead *.html setlocal filetype=htmldjango
 au BufNewFile,BufRead *.md setlocal filetype=markdown
 au BufNewFile,BufRead *.md set spell
@@ -37,11 +44,3 @@ au BufNewFile,BufRead *.markdown set spell
 au BufNewFile,BufRead *.markdown set wrap
 au BufNewFile,BufRead *.markdown set linebreak
 au BufNewFile,BufRead *.markdown set nolist
-au BufNewFile,BufRead *.java setlocal omnifunc=javacomplete#Complete
-
-let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
-let g:syntastic_java_javac_config_file_enabled = 1
-let g:clang_user_options='|| exit 0'
-let g:clang_complete_auto = 1
-let g:clang_close_preview = 1
-let g:syntastic_objc_compiler = "clang"
