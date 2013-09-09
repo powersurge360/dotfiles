@@ -35,6 +35,7 @@ let g:syntastic_objc_compiler = "clang"
 let g:syntastic_java_checkers = []
 
 au BufNewFile,BufRead *.html setlocal filetype=htmldjango
+au BufNewFile,BufRead *.ssi setlocal filetype=html
 au BufNewFile,BufRead *.md setlocal filetype=markdown
 au BufNewFile,BufRead *.md set spell
 au BufNewFile,BufRead *.md set wrap
