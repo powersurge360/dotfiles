@@ -27,10 +27,6 @@ highlight clear SignColumn
 set directory=/tmp
 autocmd FileType make setlocal noexpandtab
 
-let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
-let g:clang_user_options='|| exit 0'
-let g:clang_complete_auto = 1
-let g:clang_close_preview = 1
 let g:syntastic_objc_compiler = "clang"
 let g:syntastic_java_checkers = []
 
