@@ -29,6 +29,8 @@ autocmd FileType make setlocal noexpandtab
 
 let g:syntastic_objc_compiler = "clang"
 let g:syntastic_java_checkers = []
+let g:ycm_autoclose_preview_window_after_completion = 1
+nnoremap <leader>d :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 au BufNewFile,BufRead *.html setlocal filetype=htmldjango
 au BufNewFile,BufRead *.ssi setlocal filetype=html
@@ -41,3 +43,4 @@ au BufNewFile,BufRead *.markdown set spell
 au BufNewFile,BufRead *.markdown set wrap
 au BufNewFile,BufRead *.markdown set linebreak
 au BufNewFile,BufRead *.markdown set nolist
+au BufNewFile,BufRead *.php set autoindent

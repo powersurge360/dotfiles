@@ -1,4 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/powersurge/projects/skcarchitects/wwwroot/2013-2/mobile/vendor/bootstrap/css'
-let g:netrw_dirhist_2='/home/powersurge/projects/pai/ATMReportsDev/WEB-INF/src/com/paireports/screens/reports'
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/powersurge/projects/heather-bootstrap/assets/vendor'
+let g:netrw_dirhist_2='/home/powersurge/projects/heather-bootstrap/assets/vendor/bootstrap'
+let g:netrw_dirhist_3='/home/powersurge/projects/heather-bootstrap'
+let g:netrw_dirhist_4='/home/powersurge/projects/heather-bootstrap/assets'
+let g:netrw_dirhist_5='/home/powersurge/projects/heather-bootstrap/assets/vendor'
+let g:netrw_dirhist_6='/home/powersurge/projects/heather-bootstrap/assets/vendor/bootstrap'
+let g:netrw_dirhist_7='/home/powersurge/projects/heather-bootstrap/assets/vendor/bootstrap/css'
+let g:netrw_dirhist_8='/home/powersurge/projects/xbox/project'
