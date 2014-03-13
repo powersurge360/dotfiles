@@ -46,3 +46,6 @@
 [submodule "vim/bundle/slim-template"]
 	path = vim/bundle/slim-template
 	url = https://github.com/slim-template/vim-slim
+[submodule "vim/bundle/fugitive"]
+	path = vim/bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
