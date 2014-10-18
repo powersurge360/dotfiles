@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/Users/kdiale/projects/MEDTRONICCRDM.asktheicd/asktheicd'
 let g:netrw_dirhist_2='/Users/kdiale/projects/MEDTRONICCRDM.asktheicd/asktheicd/templates'
 let g:netrw_dirhist_3='/Users/kdiale/projects/MEDTRONICCRDM.asktheicd/asktheicd/templates/email_landing'
 let g:netrw_dirhist_4='/Users/kdiale/projects/MEDTRONICCRDM.asktheicd'
 let g:netrw_dirhist_5='/Users/kdiale/projects/nat/log'
 let g:netrw_dirhist_6='/Users/kdiale/projects/kevindiale.com/static/public'
+let g:netrw_dirhist_7='/Users/kdiale/dotfiles/oh-my-zsh'
