@@ -1,10 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/home/powersurge/projects/heather-bootstrap/assets/vendor'
-let g:netrw_dirhist_2='/home/powersurge/projects/heather-bootstrap/assets/vendor/bootstrap'
-let g:netrw_dirhist_3='/home/powersurge/projects/heather-bootstrap'
-let g:netrw_dirhist_4='/home/powersurge/projects/heather-bootstrap/assets'
-let g:netrw_dirhist_5='/home/powersurge/projects/heather-bootstrap/assets/vendor'
-let g:netrw_dirhist_6='/home/powersurge/projects/heather-bootstrap/assets/vendor/bootstrap'
-let g:netrw_dirhist_7='/home/powersurge/projects/heather-bootstrap/assets/vendor/bootstrap/css'
-let g:netrw_dirhist_8='/home/powersurge/projects/xbox/project'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/kdiale/projects/MEDTRONICCRDM.asktheicd/asktheicd'
+let g:netrw_dirhist_2='/Users/kdiale/projects/MEDTRONICCRDM.asktheicd/asktheicd/templates'
+let g:netrw_dirhist_3='/Users/kdiale/projects/MEDTRONICCRDM.asktheicd/asktheicd/templates/email_landing'
+let g:netrw_dirhist_4='/Users/kdiale/projects/MEDTRONICCRDM.asktheicd'
+let g:netrw_dirhist_5='/Users/kdiale/projects/nat/log'
+let g:netrw_dirhist_6='/Users/kdiale/projects/kevindiale.com/static/public'

@@ -29,13 +29,13 @@ autocmd FileType make setlocal noexpandtab
 
 let g:syntastic_objc_compiler = "clang"
 let g:syntastic_java_checkers = []
+let g:ycm_filetype_blacklist = { 'php': 1 }
 let g:ycm_autoclose_preview_window_after_completion = 1
 nnoremap <leader>d :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 au BufNewFile,BufRead *.html setlocal filetype=htmldjango
 au BufNewFile,BufRead *.ssi setlocal filetype=html
 au BufNewFile,BufRead *.md setlocal filetype=markdown
-au BufNewFile,BufRead *.md set spell
 au BufNewFile,BufRead *.md set wrap
 au BufNewFile,BufRead *.md set linebreak
 au BufNewFile,BufRead *.md set nolist

@@ -37,6 +37,7 @@ source $ZSH/oh-my-zsh.sh
 
 export WORKON_HOME="~/.virtualenvs"
 [[ -e ~/.local/bin/virtualenvwrapper.sh ]] && source ~/.local/bin/virtualenvwrapper.sh
+[[ -e ~/Library/Python/2.7/bin/virtualenvwrapper.sh ]] && source ~/Library/Python/2.7/bin/virtualenvwrapper.sh
 
 export force_s3tc_enable=true
 export EDITOR="vim"
@@ -66,3 +67,8 @@ export PATH=~/.local/bin:$PATH
 export PATH="/usr/local/heroku/bin:$PATH"
 
 [[ -e $HOME/.ansible ]] && export ANSIBLE_ROLES_PATH=$HOME/.ansible/roles
+
+[[ -e $HOME/.composer ]] && export PATH=$HOME/.composer/vendor/bin:$PATH
+
+PERL_MB_OPT="--install_base \"/Users/kdiale/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/kdiale/perl5"; export PERL_MM_OPT;
