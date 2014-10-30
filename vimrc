@@ -30,6 +30,7 @@ autocmd FileType make setlocal noexpandtab
 let g:syntastic_objc_compiler = "clang"
 let g:syntastic_java_checkers = []
 let g:ycm_filetype_blacklist = { 'php': 1 }
+let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
 nnoremap <leader>d :YcmCompleter GoToDefinitionElseDeclaration<CR>
 

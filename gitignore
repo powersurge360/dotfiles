@@ -3,3 +3,4 @@
 *.vimsession
 tags
 .DS_Store
+vendor/gems
