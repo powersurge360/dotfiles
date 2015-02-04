@@ -1,8 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/kdiale/projects/GIFTBAR.MainRepo/www/application/default-config'
-let g:netrw_dirhist_2='/Users/kdiale/projects/DECOPAC.B2C/db/seeds'
-let g:netrw_dirhist_3='/Users/kdiale/review'
-let g:netrw_dirhist_4='/Users/kdiale/projects/DECOPAC.cakes/config/deploy'
-let g:netrw_dirhist_5='/Users/kdiale/projects/DECOPAC.B2C/config'
-let g:netrw_dirhist_6='/Users/kdiale/projects/DECOPAC.B2C/app/models/spree'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/kdiale/projects/derbypy_blog/project/derbypy_blog'
+let g:netrw_dirhist_2='/Users/kdiale/projects/phoji-service/vendor/gems/ruby/2.2.0/gems/devise-3.4.1/app/controllers/devise'
+let g:netrw_dirhist_3='/Users/kdiale/projects/phoji-service/db/migrate'

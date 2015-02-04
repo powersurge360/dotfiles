@@ -59,7 +59,7 @@ export CLASSPATH="."
 [[ -e /usr/local/go ]] && export GOROOT=/usr/local/go && export PATH="/usr/local/go/bin":$PATH
 
 [[ -e $HOME/.android ]] && export PATH="$HOME/.android/platform-tools:$HOME/.android/tools:$PATH"
-[[ -e $HOME/.play ]] && export PATH=~/.play:$PATH
+[[ -e $HOME/.activator ]] && export PATH=~/.activator:$PATH
 
 export PATH=~/.local/bin:$PATH
 

@@ -28,15 +28,21 @@ set directory=/tmp
 autocmd FileType make setlocal noexpandtab
 
 let g:syntastic_objc_compiler = "clang"
-let g:syntastic_java_checkers = []
 let g:ycm_filetype_blacklist = { 'php': 1 }
+let g:syntastic_java_javac_config_file_enabled = 1
 let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
 nnoremap <leader>d :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
+autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1 
+autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
+autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+
 au BufNewFile,BufRead *.html setlocal filetype=htmldjango
 au BufNewFile,BufRead *.ssi setlocal filetype=html
 au BufNewFile,BufRead *.md setlocal filetype=markdown
+au BufNewFile,BufRead *.deface setlocal filetype=html.eruby
+au BufNewFile,BufRead *.jbuilder setlocal filetype=ruby
 au BufNewFile,BufRead *.md set wrap
 au BufNewFile,BufRead *.md set linebreak
 au BufNewFile,BufRead *.md set nolist
