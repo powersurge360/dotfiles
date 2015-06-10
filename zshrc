@@ -36,18 +36,12 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 export WORKON_HOME="~/.virtualenvs"
-[[ -e ~/.local/bin/virtualenvwrapper.sh ]] && source ~/.local/bin/virtualenvwrapper.sh
+[[ -e /usr/local/bin/virtualenvwrapper.sh ]] && source /usr/local/bin/virtualenvwrapper.sh
 [[ -e ~/Library/Python/2.7/bin/virtualenvwrapper.sh ]] && source ~/Library/Python/2.7/bin/virtualenvwrapper.sh
 
-export force_s3tc_enable=true
 export EDITOR="vim"
 
 export NODE_PATH="/usr/local/lib/node_modules"
-
-if [ $TERM = "xterm" ]
-then
-    export TERM="xterm-256color"
-fi
 
 export PATH="/usr/local/bin:$PATH:/usr/local/share/npm/bin"
 export PATH="$HOME/bin:$PATH"
@@ -59,6 +53,7 @@ export CLASSPATH="."
 [[ -e /usr/local/go ]] && export GOROOT=/usr/local/go && export PATH="/usr/local/go/bin":$PATH
 
 [[ -e $HOME/.android ]] && export PATH="$HOME/.android/platform-tools:$HOME/.android/tools:$PATH"
+[[ -e $HOME/.android-studio ]] && export PATH="$HOME/.android-studio/bin:$PATH"
 [[ -e $HOME/.activator ]] && export PATH=~/.activator:$PATH
 
 export PATH=~/.local/bin:$PATH
@@ -72,3 +67,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 PERL_MB_OPT="--install_base \"/Users/kdiale/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/kdiale/perl5"; export PERL_MM_OPT;
+
+if [[ $TERM == xterm ]] then
+    TERM=xterm-256color;
+fi
