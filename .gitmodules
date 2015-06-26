@@ -40,9 +40,6 @@
 [submodule "vim/bundle/scala"]
 	path = vim/bundle/scala
 	url = https://github.com/derekwyatt/vim-scala.git
-[submodule "vim/bundle/youcompleteme"]
-	path = vim/bundle/youcompleteme
-	url = https://github.com/Valloric/YouCompleteMe.git
 [submodule "vim/bundle/slim-template"]
 	path = vim/bundle/slim-template
 	url = https://github.com/slim-template/vim-slim

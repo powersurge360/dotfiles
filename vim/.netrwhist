@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/kdiale/projects/derbypy_blog/project/derbypy_blog'
-let g:netrw_dirhist_2='/Users/kdiale/projects/phoji-service/vendor/gems/ruby/2.2.0/gems/devise-3.4.1/app/controllers/devise'
-let g:netrw_dirhist_3='/Users/kdiale/projects/phoji-service/db/migrate'
-let g:netrw_dirhist_4='/opt/touchscreen.fix'
-let g:netrw_dirhist_5='/home/powersurge360/.config/google-chrome/Crash Reports'
-let g:netrw_dirhist_6='/home/powersurge360/projects/django-multi-gtfs/multigtfs/migrations'
