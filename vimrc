@@ -36,6 +36,7 @@ autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 
 au BufNewFile,BufRead *.html setlocal filetype=htmldjango
+au BufNewFile,BufRead *.j2 setlocal filetype=django
 au BufNewFile,BufRead *.ssi setlocal filetype=html
 au BufNewFile,BufRead *.md setlocal filetype=markdown
 au BufNewFile,BufRead *.deface setlocal filetype=html.eruby
