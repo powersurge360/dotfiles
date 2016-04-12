@@ -21,6 +21,7 @@ map j gj
 map k gk
 set backspace=2
 set splitbelow
+set cm=blowfish2
 
 highlight clear SignColumn
 
@@ -44,6 +45,7 @@ au BufNewFile,BufRead *.jbuilder setlocal filetype=ruby
 au BufNewFile,BufRead *.md set wrap
 au BufNewFile,BufRead *.md set linebreak
 au BufNewFile,BufRead *.md set nolist
+au BufNewFile,BufRead *.md set spell
 au BufNewFile,BufRead *.markdown set spell
 au BufNewFile,BufRead *.markdown set wrap
 au BufNewFile,BufRead *.markdown set linebreak
