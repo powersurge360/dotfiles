@@ -3,20 +3,21 @@ set rtp+=~/.vim/bundle/Vundle.vim
 set nocompatible
 filetype off
 
-call vundle#begin()
+call plug#begin()
 
-Plugin 'kien/ctrlp.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'sjl/gundo'
-Plugin 'nanotech/jellybeans'
-Plugin 'scrooloose/syntastic'
-Plugin 'ap/vim-css-color'
-Plugin 'tpope/vim-rails'
-Plugin 'tpop/vim-sleuth'
-Plugin 'jmcantrell/vim-virtualenv'
+Plug 'kien/ctrlp.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'sjl/gundo.vim'
+Plug 'nanotech/jellybeans.vim'
+Plug 'scrooloose/syntastic'
+Plug 'ap/vim-css-color'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-sleuth'
+Plug 'jmcantrell/vim-virtualenv'
+Plug 'morhetz/gruvbox'
 
-call vundle#end()
+call plug#end()
 
 syntax on
 set expandtab
@@ -26,9 +27,8 @@ set foldmethod=indent
 retab
 set t_Co=256
 set background=dark
-colorscheme jellybeans
+colorscheme gruvbox
 filetype off
-filetype plugin on
 set tabstop=4
 set shiftwidth=4
 set cc=79
