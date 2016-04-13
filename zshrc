@@ -39,7 +39,7 @@ export WORKON_HOME="~/.virtualenvs"
 [[ -e /usr/local/bin/virtualenvwrapper.sh ]] && source /usr/local/bin/virtualenvwrapper.sh
 [[ -e ~/Library/Python/2.7/bin/virtualenvwrapper.sh ]] && source ~/Library/Python/2.7/bin/virtualenvwrapper.sh
 
-export EDITOR="vim"
+export EDITOR="nvim"
 
 export NODE_PATH="/usr/local/lib/node_modules"
 
