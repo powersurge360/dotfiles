@@ -1,5 +1,4 @@
 config.json
 .DS_Store
 vim/.netrwhist
-vim/bundle
-vim/plugged
+vim

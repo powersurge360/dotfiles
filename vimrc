@@ -1,8 +1,3 @@
-set rtp+=~/.vim/bundle/Vundle.vim
-
-set nocompatible
-filetype off
-
 call plug#begin()
 
 Plug 'kien/ctrlp.vim'
@@ -16,6 +11,7 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-sleuth'
 Plug 'jmcantrell/vim-virtualenv'
 Plug 'morhetz/gruvbox'
+Plug 'valloric/YouCompleteMe'
 
 call plug#end()
 
@@ -28,7 +24,8 @@ retab
 set t_Co=256
 set background=dark
 colorscheme gruvbox
-filetype off
+filetype on
+filetype plugin on
 set tabstop=4
 set shiftwidth=4
 set cc=79
@@ -38,7 +35,6 @@ map j gj
 map k gk
 set backspace=2
 set splitbelow
-set cm=blowfish2
 
 highlight clear SignColumn
 
