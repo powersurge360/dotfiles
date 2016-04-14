@@ -15,6 +15,7 @@ Plug 'valloric/YouCompleteMe'
 Plug 'sheerun/vim-polyglot'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'edkolev/tmuxline.vim'
 
 call plug#end()
 
@@ -48,6 +49,7 @@ let g:syntastic_objc_compiler = "clang"
 let g:syntastic_java_javac_config_file_enabled = 1
 let g:syntastic_python_flake8_args = "--max-complexity=10"
 let g:syntastic_javascript_checkers = ["eslint"]
+let g:airline_powerline_fonts = 1
 
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1 
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
