@@ -12,6 +12,9 @@ Plug 'tpope/vim-sleuth'
 Plug 'jmcantrell/vim-virtualenv'
 Plug 'morhetz/gruvbox'
 Plug 'valloric/YouCompleteMe'
+Plug 'sheerun/vim-polyglot'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
@@ -49,6 +52,8 @@ let g:syntastic_javascript_checkers = ["eslint"]
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1 
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
 au BufNewFile,BufRead *.html setlocal filetype=htmldjango
 au BufNewFile,BufRead *.j2 setlocal filetype=django
