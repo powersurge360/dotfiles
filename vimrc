@@ -72,3 +72,5 @@ au BufNewFile,BufRead *.markdown set wrap
 au BufNewFile,BufRead *.markdown set linebreak
 au BufNewFile,BufRead *.markdown set nolist
 au BufNewFile,BufRead *.php set autoindent
+
+nnoremap <leader>g :YcmCompleter GoTo<CR>
