@@ -16,6 +16,8 @@ Plug 'sheerun/vim-polyglot'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
+Plug 'hsanson/vim-android'
+Plug 'artur-shaik/vim-javacomplete2'
 
 call plug#end()
 
@@ -72,5 +74,8 @@ au BufNewFile,BufRead *.markdown set wrap
 au BufNewFile,BufRead *.markdown set linebreak
 au BufNewFile,BufRead *.markdown set nolist
 au BufNewFile,BufRead *.php set autoindent
+au FileType java setlocal omnifunc=javacomplete#Complete
+au FileType java call airline#parts#define_function('vim-gradle-status', 'gradle#statusLine')
+au FileType java let g:airline_section_x= airline#section#create_right(['tagbar', 'filetype', 'vim-gradle-status'])
 
 nnoremap <leader>g :YcmCompleter GoTo<CR>

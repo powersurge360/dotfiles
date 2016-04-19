@@ -55,6 +55,7 @@ export CLASSPATH="."
 [[ -e $HOME/.android ]] && export PATH="$HOME/.android/platform-tools:$HOME/.android/tools:$PATH"
 [[ -e $HOME/.android-studio ]] && export PATH="$HOME/.android-studio/bin:$PATH"
 [[ -e $HOME/.activator ]] && export PATH=~/.activator:$PATH
+[[ -e $HOME/.android ]] && export ANDROID_HOME=~/Android/Sdk
 
 export PATH=~/.local/bin:$PATH
 
