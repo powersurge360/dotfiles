@@ -29,7 +29,8 @@ set foldmethod=indent
 retab
 set t_Co=256
 set background=dark
-colorscheme gruvbox
+colorscheme jellybeans
+highlight Normal ctermbg=black
 filetype on
 filetype plugin on
 set tabstop=4
@@ -77,5 +78,17 @@ au BufNewFile,BufRead *.php set autoindent
 au FileType java setlocal omnifunc=javacomplete#Complete
 au FileType java call airline#parts#define_function('vim-gradle-status', 'gradle#statusLine')
 au FileType java let g:airline_section_x= airline#section#create_right(['tagbar', 'filetype', 'vim-gradle-status'])
+
+nmap <F4> <Plug>(JavaComplete-Imports-AddSmart)
+imap <F4> <Plug>(JavaComplete-Imports-AddSmart)
+
+nmap <F5> <Plug>(JavaComplete-Imports-Add)
+imap <F5> <Plug>(JavaComplete-Imports-Add)
+
+nmap <F6> <Plug>(JavaComplete-Imports-AddMissing)
+imap <F6> <Plug>(JavaComplete-Imports-AddMissing)
+
+nmap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
+imap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
 
 nnoremap <leader>g :YcmCompleter GoTo<CR>
