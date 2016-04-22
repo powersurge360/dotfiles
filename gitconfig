@@ -3,6 +3,7 @@
 	email = powersurge360@gmail.com
 [core]
 	excludesfile = /home/powersurge/.gitignore
+	editor = nvim
 [diff]
 	tool = vimdiff
 	prompt = false

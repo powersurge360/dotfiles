@@ -30,7 +30,6 @@ retab
 set t_Co=256
 set background=dark
 colorscheme jellybeans
-highlight Normal ctermbg=black
 filetype on
 filetype plugin on
 set tabstop=4
