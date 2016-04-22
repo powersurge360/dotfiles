@@ -72,3 +72,6 @@ PERL_MM_OPT="INSTALL_BASE=/Users/kdiale/perl5"; export PERL_MM_OPT;
 if [[ $TERM == xterm ]] then
     TERM=xterm-256color;
 fi
+
+BASE16_SHELL="$HOME/dotfiles/base16-shell/base16-eighties.dark.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
