@@ -1,6 +1,6 @@
 call plug#begin()
 
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'sjl/gundo.vim'
@@ -16,6 +16,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
+Plug 'ryanoasis/vim-devicons'
 Plug 'hsanson/vim-android'
 Plug 'artur-shaik/vim-javacomplete2'
 
