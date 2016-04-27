@@ -75,3 +75,6 @@ fi
 
 BASE16_SHELL="$HOME/dotfiles/base16-shell/base16-eighties.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+
+export NVM_DIR="/home/powersurge/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

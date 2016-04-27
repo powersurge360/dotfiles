@@ -28,6 +28,9 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
 Plug 'ryanoasis/vim-devicons'
 
+" Other
+Plug 'chrisbra/csv.vim'
+
 call plug#end()
 
 syntax on
