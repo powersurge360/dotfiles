@@ -1,5 +1,4 @@
 *.pyc
-*.conf
 *.vimsession
 tags
 .DS_Store
