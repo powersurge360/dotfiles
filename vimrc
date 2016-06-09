@@ -69,8 +69,7 @@ let g:airline_powerline_fonts = 1
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
-autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
-autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+let g:ycm_autoclose_preview_window_after_completion = 1
 
 au BufNewFile,BufRead *.html setlocal filetype=htmldjango
 au BufNewFile,BufRead *.j2 setlocal filetype=django
@@ -104,3 +103,4 @@ nmap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
 imap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
 
 nnoremap <leader>g :YcmCompleter GoTo<CR>
+nnoremap <leader>d :YcmCompleter GetDoc<CR>
