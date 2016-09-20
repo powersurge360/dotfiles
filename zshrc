@@ -78,3 +78,7 @@ BASE16_SHELL="$HOME/dotfiles/base16-shell/base16-eighties.dark.sh"
 
 export NVM_DIR="/home/powersurge/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+[[ -e ~/.google_appengine ]] && export PATH=$PATH:~/.google_appengine
+
+[[ -e /usr/local/share/webOS_TV_SDK/CLI/bin ]] && export PATH=/usr/local/share/webOS_TV_SDK/CLI/bin:$PATH
