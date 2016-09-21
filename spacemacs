@@ -279,6 +279,10 @@ you should place your code here."
     (define-key evil-motion-state-map (kbd "<remap> <evil-next-line>") 'evil-next-visual-line)
     (define-key evil-motion-state-map (kbd "<remap> <evil-previous-line>") 'evil-previous-visual-line)
     (setq-default evil-cross-lines t)
+
+    (setq-default fill-column 80)
+    (define-globalized-minor-mode global-fci-mode fci-mode (lambda () (fci-mode t)))
+      (global-fci-mode t)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
