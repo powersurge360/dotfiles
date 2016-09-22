@@ -270,9 +270,6 @@ you should place your code here."
                         :background "#393939"
                         :foreground "#747369")
 
-    ;; Set up line wrapping in org-mode
-    (add-hook 'org-mode-hook #'turn-on-visual-line-mode)
-
     ;; Make movement keys work like they should
     (define-key evil-normal-state-map (kbd "<remap> <evil-next-line>") 'evil-next-visual-line)
     (define-key evil-normal-state-map (kbd "<remap> <evil-previous-line>") 'evil-previous-visual-line)
@@ -280,9 +277,14 @@ you should place your code here."
     (define-key evil-motion-state-map (kbd "<remap> <evil-previous-line>") 'evil-previous-visual-line)
     (setq-default evil-cross-lines t)
 
+    ;; Mark the 80th column
     (setq-default fill-column 80)
     (define-globalized-minor-mode global-fci-mode fci-mode (lambda () (fci-mode t)))
-      (global-fci-mode t)
+    (global-fci-mode)
+
+    ;; Set up line wrapping in org-mode
+    (add-hook 'org-mode-hook #'turn-on-visual-line-mode)
+    (add-hook 'org-mode-hook #'turn-off-fci-mode)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
