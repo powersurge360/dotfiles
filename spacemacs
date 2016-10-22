@@ -23,7 +23,9 @@ values."
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     auto-completion
+     (auto-completion :variables
+                      auto-completion-enable-snippets-in-popup t
+                      auto-completion-enable-help-tooltip t)
      ;; better-defaults
      emacs-lisp
      git
@@ -47,6 +49,9 @@ values."
      games
      yaml
      markdown
+     vim-powerline
+     colors
+     csv
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -119,11 +124,12 @@ values."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
-   dotspacemacs-default-font '("Source Code Pro"
-                               :size 13
+   ;; "Source Code Pro"
+   dotspacemacs-default-font '("Ubuntu Mono"
+                               ;;:size 16
                                :weight normal
                                :width normal
-                               :powerline-scale 1.1)
+                               :powerline-scale 1.4)
    ;; The leader key
    dotspacemacs-leader-key "SPC"
    ;; The leader key accessible in `emacs state' and `insert state'
@@ -262,7 +268,7 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
-    (setq org-agenda-files '("~/org"))
+    (setq org-agenda-files '("~/org" "~/professional_org"))
 
     ;; Clean up the really ugly default linums
     (setq linum-format "%4d ")
@@ -285,6 +291,19 @@ you should place your code here."
     ;; Set up line wrapping in org-mode
     (add-hook 'org-mode-hook #'turn-on-visual-line-mode)
     (add-hook 'org-mode-hook #'turn-off-fci-mode)
+
+    (custom-set-variables '(org-export-backends '(ascii html md odt latex)))
+
+    (setq js2-basic-offset 2)
+    (setq web-mode-markup-indent-offset 2)
+
+    (setq create-lockfiles nil)
+    (setq org-startup-indented t)
+    (setq org-columns-default-format "%50ITEM %4TODO %CLOCKSUM %EFFORT %TAGS")
+
+    ;; JS2-Mode syntax checking is jacked, yo
+    (setq js2-mode-show-parse-errors nil)
+    (setq js2-mode-show-strict-warnings nil)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
