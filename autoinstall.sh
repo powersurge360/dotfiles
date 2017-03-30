@@ -12,3 +12,4 @@ mkdir ~/.vim
 cp -R ~/dotfiles/vim/autoload ~/.vim/
 ln -s ~/.vim ~/.config/nvim
 ln -s ~/.vimrc ~/.config/nvim/init.vim
+ln -s ~/dotfiles/tern-config ~/.tern-config
