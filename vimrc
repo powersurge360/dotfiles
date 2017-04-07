@@ -11,7 +11,8 @@ Plug 'chriskempson/base16-vim'
 
 " IDE functionality
 Plug 'tpope/vim-rails'
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug 'sjl/gundo.vim'
 Plug 'scrooloose/syntastic'
 Plug 'jmcantrell/vim-virtualenv'
@@ -19,6 +20,7 @@ Plug 'valloric/YouCompleteMe'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-sleuth'
 Plug 'vim-ruby/vim-ruby'
+Plug 'jreybert/vimagit'
 
 " Aesthetics
 Plug 'ap/vim-css-color'
@@ -69,9 +71,11 @@ let g:syntastic_objc_compiler = "clang"
 let g:syntastic_python_flake8_args = "--max-complexity=10"
 let g:syntastic_javascript_checkers = ["javascript/eslint"]
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 let g:python_host_prog = '/usr/bin/python'
 let g:python3_host_prog = '/usr/bin/python3'
-let g:vimwiki_list = [{}, {'path': '~/workwiki'}]
+let g:ycm_python_binary_path = 'python'
+let g:vimwiki_ext2syntax = {'.md': 'markdown' }
 
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
@@ -87,8 +91,12 @@ au BufNewFile,BufRead *.jbuilder setlocal filetype=ruby
 au BufNewFile,BufRead *.md set wrap
 au BufNewFile,BufRead *.md set linebreak
 au BufNewFile,BufRead *.md set nolist
-au BufNewFile,BufRead *.md set spell
-au BufNewFile,BufRead *.markdown set spell
+au BufNewFile,BufRead *.md setlocal spell
+au BufNewFile,BufRead *.wiki set wrap
+au BufNewFile,BufRead *.wiki set linebreak
+au BufNewFile,BufRead *.wiki set nolist
+au BufNewFile,BufRead *.wiki setlocal spell
+au BufNewFile,BufRead *.markdown setlocal spell
 au BufNewFile,BufRead *.markdown set wrap
 au BufNewFile,BufRead *.markdown set linebreak
 au BufNewFile,BufRead *.markdown set nolist
@@ -96,3 +104,4 @@ au BufNewFile,BufRead *.php set autoindent
 
 nnoremap <leader>g :YcmCompleter GoTo<CR>
 nnoremap <leader>d :YcmCompleter GetDoc<CR>
+nnoremap <c-p> :Files<CR>

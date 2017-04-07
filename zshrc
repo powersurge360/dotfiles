@@ -1,11 +1,12 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
+DEFAULT_USER=powersurge
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -82,3 +83,5 @@ export NVM_DIR="/home/powersurge/.nvm"
 [[ -e ~/.google_appengine ]] && export PATH=$PATH:~/.google_appengine
 
 [[ -e /usr/local/share/webOS_TV_SDK/CLI/bin ]] && export PATH=/usr/local/share/webOS_TV_SDK/CLI/bin:$PATH
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
