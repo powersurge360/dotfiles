@@ -17,3 +17,5 @@
 	user = powersurge360
 [merge]
 	tool = vimdiff
+[http]
+	cookiefile = /home/powersurge/.gitcookies

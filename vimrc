@@ -14,7 +14,7 @@ Plug 'tpope/vim-rails'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'sjl/gundo.vim'
-Plug 'scrooloose/syntastic'
+Plug 'w0rp/ale'
 Plug 'jmcantrell/vim-virtualenv'
 Plug 'valloric/YouCompleteMe'
 Plug 'sheerun/vim-polyglot'
@@ -31,6 +31,9 @@ Plug 'ryanoasis/vim-devicons'
 
 " Non-editor functionality
 Plug 'vimwiki/vimwiki'
+Plug 'ledger/vim-ledger'
+Plug 'junegunn/goyo.vim'
+Plug 'jceb/vim-orgmode'
 
 " Other
 Plug 'chrisbra/csv.vim'
@@ -105,3 +108,5 @@ au BufNewFile,BufRead *.php set autoindent
 nnoremap <leader>g :YcmCompleter GoTo<CR>
 nnoremap <leader>d :YcmCompleter GetDoc<CR>
 nnoremap <c-p> :Files<CR>
+nnoremap <c-f> :Ag<CR>
+nnoremap <c-_> :BLines<CR>

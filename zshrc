@@ -30,7 +30,7 @@ ZSH_THEME="agnoster"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git mercurial django pip npm python command-not-found github bgnotify)
+plugins=(git mercurial django pip npm python command-not-found github)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -85,3 +85,28 @@ export NVM_DIR="/home/powersurge/.nvm"
 [[ -e /usr/local/share/webOS_TV_SDK/CLI/bin ]] && export PATH=/usr/local/share/webOS_TV_SDK/CLI/bin:$PATH
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export LEDGER_FILE=~/finances/finances.ledger
+export LEDGER_PRICE_DB=~/finances/prices_db.ledger
+
+export FZF_DEFAULT_OPTS="--preview='(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
+export FZF_DEFAULT_COMMAND='ag -g ""'
+
+bindkey -rM emacs '^P'
+
+function nvim_fzf {
+    file=$(fzf)
+
+    if [ $? -ne 0 ]; then
+        return
+    fi
+
+    $EDITOR $file
+}
+
+bindkey -s '^P' "nvim_fzf\n"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/powersurge/.sdkman"
+[[ -s "/home/powersurge/.sdkman/bin/sdkman-init.sh" ]] && source "/home/powersurge/.sdkman/bin/sdkman-init.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
