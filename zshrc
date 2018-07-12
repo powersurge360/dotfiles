@@ -90,6 +90,9 @@ export LEDGER_FILE=~/finances/finances.ledger
 export LEDGER_PRICE_DB=~/finances/prices_db.ledger
 
 export FZF_DEFAULT_OPTS="--preview='(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
+export FZF_CTRL_R_OPTS="--no-preview"
+export FZF_CTRL_T_OPTS="--no-preview"
+export FZF_ALT_C_OPTS="--no-preview"
 export FZF_DEFAULT_COMMAND='ag -g ""'
 
 bindkey -rM emacs '^P'

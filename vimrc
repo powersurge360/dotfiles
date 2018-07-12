@@ -95,12 +95,10 @@ au BufNewFile,BufRead *.md set wrap
 au BufNewFile,BufRead *.md set linebreak
 au BufNewFile,BufRead *.md set nolist
 au BufNewFile,BufRead *.md setlocal spell
-au BufNewFile,BufRead *.wiki set wrap
 au BufNewFile,BufRead *.wiki set linebreak
 au BufNewFile,BufRead *.wiki set nolist
 au BufNewFile,BufRead *.wiki setlocal spell
 au BufNewFile,BufRead *.markdown setlocal spell
-au BufNewFile,BufRead *.markdown set wrap
 au BufNewFile,BufRead *.markdown set linebreak
 au BufNewFile,BufRead *.markdown set nolist
 au BufNewFile,BufRead *.php set autoindent
