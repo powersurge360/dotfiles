@@ -1,6 +1,6 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
-DEFAULT_USER=powersurge
+DEFAULT_USER=powersurge360
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -77,7 +77,7 @@ fi
 BASE16_SHELL=$HOME/.config/base16-shell/
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
-export NVM_DIR="/home/powersurge/.nvm"
+export NVM_DIR="/home/powersurge360/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 [[ -e ~/.google_appengine ]] && export PATH=$PATH:~/.google_appengine
@@ -89,10 +89,6 @@ export NVM_DIR="/home/powersurge/.nvm"
 export LEDGER_FILE=~/finances/finances.ledger
 export LEDGER_PRICE_DB=~/finances/prices_db.ledger
 
-export FZF_DEFAULT_OPTS="--preview='(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
-export FZF_CTRL_R_OPTS="--no-preview"
-export FZF_CTRL_T_OPTS="--no-preview"
-export FZF_ALT_C_OPTS="--no-preview"
 export FZF_DEFAULT_COMMAND='ag -g ""'
 
 bindkey -rM emacs '^P'
@@ -110,6 +106,6 @@ function nvim_fzf {
 bindkey -s '^P' "nvim_fzf\n"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/home/powersurge/.sdkman"
-[[ -s "/home/powersurge/.sdkman/bin/sdkman-init.sh" ]] && source "/home/powersurge/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="/home/powersurge360/.sdkman"
+[[ -s "/home/powersurge360/.sdkman/bin/sdkman-init.sh" ]] && source "/home/powersurge360/.sdkman/bin/sdkman-init.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

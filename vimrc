@@ -21,6 +21,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-sleuth'
 Plug 'vim-ruby/vim-ruby'
 Plug 'jreybert/vimagit'
+Plug 'scrooloose/nerdtree'
 
 " Aesthetics
 Plug 'ap/vim-css-color'
@@ -60,6 +61,7 @@ map j gj
 map k gk
 set backspace=2
 set splitbelow
+set conceallevel=0
 
 if filereadable(expand("~/.vimrc_background"))
   source ~/.vimrc_background
@@ -79,6 +81,8 @@ let g:python_host_prog = '/usr/bin/python'
 let g:python3_host_prog = '/usr/bin/python3'
 let g:ycm_python_binary_path = 'python'
 let g:vimwiki_ext2syntax = {'.md': 'markdown' }
+let g:vimwiki_conceallevel=0
+let g:vimwiki_list = [{'ext': '.md', 'syntax': 'markdown'}]
 
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
@@ -94,11 +98,8 @@ au BufNewFile,BufRead *.jbuilder setlocal filetype=ruby
 au BufNewFile,BufRead *.md set wrap
 au BufNewFile,BufRead *.md set linebreak
 au BufNewFile,BufRead *.md set nolist
-au BufNewFile,BufRead *.md setlocal spell
 au BufNewFile,BufRead *.wiki set linebreak
 au BufNewFile,BufRead *.wiki set nolist
-au BufNewFile,BufRead *.wiki setlocal spell
-au BufNewFile,BufRead *.markdown setlocal spell
 au BufNewFile,BufRead *.markdown set linebreak
 au BufNewFile,BufRead *.markdown set nolist
 au BufNewFile,BufRead *.php set autoindent
@@ -108,3 +109,5 @@ nnoremap <leader>d :YcmCompleter GetDoc<CR>
 nnoremap <c-p> :Files<CR>
 nnoremap <c-f> :Ag<CR>
 nnoremap <c-_> :BLines<CR>
+
+map <c-n> :NERDTreeToggle<CR>
