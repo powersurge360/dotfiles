@@ -22,6 +22,7 @@ Plug 'tpope/vim-sleuth'
 Plug 'vim-ruby/vim-ruby'
 Plug 'jreybert/vimagit'
 Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-surround'
 
 " Aesthetics
 Plug 'ap/vim-css-color'
@@ -33,6 +34,7 @@ Plug 'ryanoasis/vim-devicons'
 " Non-editor functionality
 Plug 'vimwiki/vimwiki'
 Plug 'ledger/vim-ledger'
+Plug 'nathangrigg/vim-beancount'
 Plug 'junegunn/goyo.vim'
 Plug 'jceb/vim-orgmode'
 
@@ -110,4 +112,4 @@ nnoremap <c-p> :Files<CR>
 nnoremap <c-f> :Ag<CR>
 nnoremap <c-_> :BLines<CR>
 
-map <c-n> :NERDTreeToggle<CR>
+map <c-o> :NERDTreeToggle<CR>
