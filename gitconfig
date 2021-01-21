@@ -21,3 +21,5 @@
 	cookiefile = /home/powersurge/.gitcookies
 [credential]
 	helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
+[pull]
+	rebase = false

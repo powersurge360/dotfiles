@@ -67,22 +67,19 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 [[ -e $HOME/.composer ]] && export PATH=$HOME/.composer/vendor/bin:$PATH
 
-PERL_MB_OPT="--install_base \"/Users/kdiale/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/Users/kdiale/perl5"; export PERL_MM_OPT;
-
 if [[ $TERM == xterm ]] then
     TERM=xterm-256color;
 fi
 
 BASE16_SHELL=$HOME/.config/base16-shell/
-[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+[ -n "$PS1" ] && \
+    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+        eval "$("$BASE16_SHELL/profile_helper.sh")"
 
-export NVM_DIR="/home/powersurge360/.nvm"
+export NVM_DIR="/Users/powersurge360/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 [[ -e ~/.google_appengine ]] && export PATH=$PATH:~/.google_appengine
-
-[[ -e /usr/local/share/webOS_TV_SDK/CLI/bin ]] && export PATH=/usr/local/share/webOS_TV_SDK/CLI/bin:$PATH
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -90,6 +87,7 @@ export LEDGER_FILE=~/finances/finances.ledger
 export LEDGER_PRICE_DB=~/finances/prices_db.ledger
 
 export FZF_DEFAULT_COMMAND='ag -g ""'
+export FZF_DEFAULT_OPTS='--preview "bat --theme=base16"'
 
 bindkey -rM emacs '^P'
 
@@ -105,7 +103,5 @@ function nvim_fzf {
 
 bindkey -s '^P' "nvim_fzf\n"
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/home/powersurge360/.sdkman"
-[[ -s "/home/powersurge360/.sdkman/bin/sdkman-init.sh" ]] && source "/home/powersurge360/.sdkman/bin/sdkman-init.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export ANDROID_HOME=/Users/$USER/Library/Android/sdk
+export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools

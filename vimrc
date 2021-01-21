@@ -16,6 +16,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'sjl/gundo.vim'
 Plug 'w0rp/ale'
 Plug 'jmcantrell/vim-virtualenv'
+Plug 'PieterjanMontens/vim-pipenv'
 Plug 'valloric/YouCompleteMe'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-sleuth'
@@ -55,7 +56,6 @@ let base16colorspace=256
 filetype on
 filetype plugin on
 set tabstop=4
-set shiftwidth=4
 set cc=79
 set nu
 set ls=2
@@ -79,8 +79,8 @@ let g:syntastic_python_flake8_args = "--max-complexity=10"
 let g:syntastic_javascript_checkers = ["javascript/eslint"]
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-let g:python_host_prog = '/usr/bin/python'
-let g:python3_host_prog = '/usr/bin/python3'
+let g:python_host_prog = '/usr/local/bin/python3'
+let g:python3_host_prog = '/usr/local/bin/python3'
 let g:ycm_python_binary_path = 'python'
 let g:vimwiki_ext2syntax = {'.md': 'markdown' }
 let g:vimwiki_conceallevel=0
