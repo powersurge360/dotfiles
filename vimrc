@@ -73,6 +73,7 @@ highlight clear SignColumn
 set directory=/tmp
 autocmd FileType make setlocal noexpandtab
 
+let g:ale_set_highlights = 0
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:python_host_prog = '/usr/local/bin/python3'
