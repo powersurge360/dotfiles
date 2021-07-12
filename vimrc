@@ -11,25 +11,28 @@ Plug 'chriskempson/base16-vim'
 
 " IDE functionality
 Plug 'tpope/vim-rails'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
 Plug 'sjl/gundo.vim'
 Plug 'w0rp/ale'
 Plug 'jmcantrell/vim-virtualenv'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'sheerun/vim-polyglot'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'tpope/vim-sleuth'
 Plug 'vim-ruby/vim-ruby'
 Plug 'jreybert/vimagit'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
 
+" Telescope
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
 " Aesthetics
 Plug 'ap/vim-css-color'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
-Plug 'ryanoasis/vim-devicons'
+Plug 'kyazdani42/nvim-web-devicons'
 
 " Non-editor functionality
 Plug 'vimwiki/vimwiki'
@@ -101,9 +104,9 @@ au BufNewFile,BufRead *.markdown set linebreak
 au BufNewFile,BufRead *.markdown set nolist
 au BufNewFile,BufRead *.php set autoindent
 
-nnoremap <c-p> :Files<CR>
-nnoremap <c-f> :Ag<CR>
-nnoremap <c-_> :BLines<CR>
+nnoremap <c-p> :Telescope find_files<CR>
+nnoremap <c-f> :Telescope live_grep<CR>
+"nnoremap <c-_> :BLines<CR>
 
 map <c-o> :NERDTreeToggle<CR>
 

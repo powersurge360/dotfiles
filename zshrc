@@ -86,22 +86,5 @@ export NVM_DIR="/Users/powersurge360/.nvm"
 export LEDGER_FILE=~/finances/finances.ledger
 export LEDGER_PRICE_DB=~/finances/prices_db.ledger
 
-export FZF_DEFAULT_COMMAND='ag -g ""'
-export FZF_DEFAULT_OPTS='--preview "bat --theme=base16"'
-
-bindkey -rM emacs '^P'
-
-function nvim_fzf {
-    file=$(fzf)
-
-    if [ $? -ne 0 ]; then
-        return
-    fi
-
-    $EDITOR $file
-}
-
-bindkey -s '^P' "nvim_fzf\n"
-
 export ANDROID_HOME=/Users/$USER/Library/Android/sdk
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
