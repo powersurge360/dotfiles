@@ -5,8 +5,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 "
 " Themes
-Plug 'nanotech/jellybeans.vim'
-Plug 'morhetz/gruvbox'
 Plug 'chriskempson/base16-vim'
 
 " IDE functionality
@@ -50,7 +48,8 @@ syntax on
 set expandtab
 set autoindent
 set smarttab
-set foldmethod=indent
+set foldmethod=expr
+set foldexpr=nvim_treesitter#foldexpr()
 retab
 set t_Co=256
 set background=dark
@@ -76,7 +75,7 @@ highlight clear SignColumn
 set directory=/tmp
 autocmd FileType make setlocal noexpandtab
 
-let g:ale_set_highlights = 0
+" let g:ale_set_highlights = 0
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:python_host_prog = '/usr/local/bin/python3'
@@ -105,10 +104,21 @@ au BufNewFile,BufRead *.markdown set nolist
 au BufNewFile,BufRead *.php set autoindent
 
 nnoremap <c-p> :Telescope find_files<CR>
-nnoremap <c-f> :Telescope live_grep<CR>
+"nnoremap <c-f> :Telescope live_grep<CR>
 "nnoremap <c-_> :BLines<CR>
 
 map <c-o> :NERDTreeToggle<CR>
+
+" Treesitter module set up
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+  highlight = {
+    enable = true,              -- false will disable the whole extension
+    disable = { "c", "rust" },  -- list of language that will be disabled
+  },
+}
+EOF
 
 " Lots of stuff copied from CoC here. Yeesh.
 
