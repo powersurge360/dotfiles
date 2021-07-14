@@ -48,8 +48,7 @@ syntax on
 set expandtab
 set autoindent
 set smarttab
-set foldmethod=expr
-set foldexpr=nvim_treesitter#foldexpr()
+set foldmethod=indent
 retab
 set t_Co=256
 set background=dark
@@ -65,6 +64,7 @@ map k gk
 set backspace=2
 set splitbelow
 set conceallevel=0
+map <Space> <Leader>
 
 if filereadable(expand("~/.vimrc_background"))
   source ~/.vimrc_background
@@ -103,9 +103,11 @@ au BufNewFile,BufRead *.markdown set linebreak
 au BufNewFile,BufRead *.markdown set nolist
 au BufNewFile,BufRead *.php set autoindent
 
-nnoremap <c-p> :Telescope find_files<CR>
-"nnoremap <c-f> :Telescope live_grep<CR>
-"nnoremap <c-_> :BLines<CR>
+" Telescope setup
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 map <c-o> :NERDTreeToggle<CR>
 
