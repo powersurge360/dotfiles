@@ -3,7 +3,8 @@ call plug#begin()
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-"
+Plug 'pwntester/octo.nvim'
+
 " Themes
 Plug 'chriskempson/base16-vim'
 
@@ -30,10 +31,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 
 " Non-editor functionality
 Plug 'vimwiki/vimwiki'
-Plug 'ledger/vim-ledger'
-Plug 'nathangrigg/vim-beancount'
 Plug 'junegunn/goyo.vim'
-Plug 'jceb/vim-orgmode'
 
 " Other
 Plug 'chrisbra/csv.vim'
@@ -116,6 +114,11 @@ require'nvim-treesitter.configs'.setup {
     disable = { "c", "rust" },  -- list of language that will be disabled
   },
 }
+EOF
+
+" Octo set up
+lua <<EOF
+require"octo".setup()
 EOF
 
 " Lots of stuff copied from CoC here. Yeesh.
