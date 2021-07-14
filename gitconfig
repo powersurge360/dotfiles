@@ -2,7 +2,7 @@
 	name = Kevin Diale
 	email = powersurge360@gmail.com
 [core]
-	excludesfile = /home/powersurge/.gitignore
+	excludesfile = /Users/powersurge360/.gitignore
 	editor = nvim
 [diff]
 	tool = vimdiff
@@ -28,3 +28,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[init]
+	defaultBranch = main
