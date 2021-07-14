@@ -11,12 +11,9 @@ Plug 'chriskempson/base16-vim'
 Plug 'tpope/vim-rails'
 Plug 'sjl/gundo.vim'
 Plug 'w0rp/ale'
-Plug 'jmcantrell/vim-virtualenv'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'tpope/vim-sleuth'
-Plug 'vim-ruby/vim-ruby'
-Plug 'jreybert/vimagit'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
 
@@ -26,7 +23,6 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
 " Aesthetics
-Plug 'ap/vim-css-color'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
