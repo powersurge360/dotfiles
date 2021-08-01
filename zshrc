@@ -51,8 +51,6 @@ export PATH="$HOME/bin:$PATH"
 
 export CLASSPATH="."
 
-[[ -e /usr/local/go ]] && export GOROOT=/usr/local/go && export PATH="/usr/local/go/bin":$PATH
-
 [[ -e $HOME/.android ]] && export PATH="$HOME/.android/platform-tools:$HOME/.android/tools:$PATH"
 [[ -e $HOME/.android-studio ]] && export PATH="$HOME/.android-studio/bin:$PATH"
 [[ -e $HOME/.activator ]] && export PATH=~/.activator:$PATH
@@ -88,3 +86,7 @@ export LEDGER_PRICE_DB=~/finances/prices_db.ledger
 
 export ANDROID_HOME=/Users/$USER/Library/Android/sdk
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+# Go installation
+export GOPATH=~/.go
+export PATH=$PATH:$(go env GOPATH)/bin
