@@ -11,7 +11,7 @@ Plug 'chriskempson/base16-vim'
 " IDE functionality
 Plug 'tpope/vim-rails'
 Plug 'sjl/gundo.vim'
-Plug 'w0rp/ale'
+" Plug 'w0rp/ale'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'tpope/vim-sleuth'
