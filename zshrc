@@ -39,7 +39,7 @@ source $ZSH/oh-my-zsh.sh
 export WORKON_HOME="~/.virtualenvs"
 export VIRTUALENVWRAPPER_PYTHON=`which python3`
 [[ -e /usr/local/bin/virtualenvwrapper.sh ]] && source /usr/local/bin/virtualenvwrapper.sh
-[[ -e ~/Library/Python/2.7/bin/virtualenvwrapper.sh ]] && source ~/Library/Python/2.7/bin/virtualenvwrapper.sh
+[[ -e /opt/homebrew/bin/virtualenvwrapper.sh ]] && source /opt/homebrew/bin/virtualenvwrapper.sh
 
 export EDITOR="nvim"
 
