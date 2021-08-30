@@ -39,6 +39,7 @@ Plug 'chrisbra/csv.vim'
 call plug#end()
 
 syntax on
+set mouse=a
 set expandtab
 set autoindent
 set smarttab
