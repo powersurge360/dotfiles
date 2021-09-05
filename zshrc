@@ -36,58 +36,58 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-export WORKON_HOME="~/.virtualenvs"
-export VIRTUALENVWRAPPER_PYTHON=`which python3`
-[[ -e /usr/local/bin/virtualenvwrapper.sh ]] && source /usr/local/bin/virtualenvwrapper.sh
-[[ -e /opt/homebrew/bin/virtualenvwrapper.sh ]] && source /opt/homebrew/bin/virtualenvwrapper.sh
+# To stop tmux from mutating the path over and over again
+if [[ -z $TMUX ]]
+then 
+    export EDITOR="nvim"
 
-export EDITOR="nvim"
+    export NODE_PATH="/usr/local/lib/node_modules"
 
-export NODE_PATH="/usr/local/lib/node_modules"
+    export CLASSPATH="."
+    export WORKON_HOME="~/.virtualenvs"
+    export VIRTUALENVWRAPPER_PYTHON=`which python3`
 
-export PATH="/usr/local/bin:$PATH:/usr/local/share/npm/bin"
-export PATH="$HOME/bin:$PATH"
-[[ -e $HOME/.rbenv ]] && export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
-[[ -e $HOME/.rbenv ]] && eval "$(rbenv init -)"
+    [[ -e /usr/local/bin/virtualenvwrapper.sh ]] && source /usr/local/bin/virtualenvwrapper.sh
+    [[ -e /opt/homebrew/bin/virtualenvwrapper.sh ]] && source /opt/homebrew/bin/virtualenvwrapper.sh
 
-export CLASSPATH="."
+    export PATH="/usr/local/bin:$PATH:/usr/local/share/npm/bin"
+    export PATH="$HOME/bin:$PATH"
+    [[ -e $HOME/.rbenv ]] && export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
+    [[ -e $HOME/.rbenv ]] && eval "$(rbenv init -)"
 
-[[ -e $HOME/.android ]] && export PATH="$HOME/.android/platform-tools:$HOME/.android/tools:$PATH"
-[[ -e $HOME/.android-studio ]] && export PATH="$HOME/.android-studio/bin:$PATH"
-[[ -e $HOME/.activator ]] && export PATH=~/.activator:$PATH
-[[ -e $HOME/.android ]] && export ANDROID_HOME=~/Android/Sdk
+    [[ -e $HOME/.android ]] && export PATH="$HOME/.android/platform-tools:$HOME/.android/tools:$PATH"
+    [[ -e $HOME/.android-studio ]] && export PATH="$HOME/.android-studio/bin:$PATH"
+    [[ -e $HOME/.activator ]] && export PATH=~/.activator:$PATH
+    [[ -e $HOME/.android ]] && export ANDROID_HOME=~/Android/Sdk
 
-export PATH=~/.local/bin:$PATH
+    export PATH=~/.local/bin:$PATH
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+    ### Added by the Heroku Toolbelt
+    export PATH="/usr/local/heroku/bin:$PATH"
 
-[[ -e $HOME/.ansible ]] && export ANSIBLE_ROLES_PATH=$HOME/.ansible/roles
+    [[ -e $HOME/.ansible ]] && export ANSIBLE_ROLES_PATH=$HOME/.ansible/roles
 
-[[ -e $HOME/.composer ]] && export PATH=$HOME/.composer/vendor/bin:$PATH
+    BASE16_SHELL=$HOME/.config/base16-shell/
+    [ -n "$PS1" ] && \
+        [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+            eval "$("$BASE16_SHELL/profile_helper.sh")"
 
-if [[ $TERM == xterm ]] then
-    TERM=xterm-256color;
+    export NVM_DIR="/Users/powersurge360/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+    [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+    export LEDGER_FILE=~/finances/finances.ledger
+    export LEDGER_PRICE_DB=~/finances/prices_db.ledger
+
+    # Go installation
+    export GOPATH=~/.go
+    export PATH=$PATH:$(go env GOPATH)/bin
+
+    export ANDROID_HOME=/Users/$USER/Library/Android/sdk
+    export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+    [[ -e $HOME/.composer ]] && export PATH=$HOME/.composer/vendor/bin:$PATH
+
+    [[ -e ~/.google_appengine ]] && export PATH=$PATH:~/.google_appengine
 fi
-
-BASE16_SHELL=$HOME/.config/base16-shell/
-[ -n "$PS1" ] && \
-    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
-        eval "$("$BASE16_SHELL/profile_helper.sh")"
-
-export NVM_DIR="/Users/powersurge360/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-[[ -e ~/.google_appengine ]] && export PATH=$PATH:~/.google_appengine
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-export LEDGER_FILE=~/finances/finances.ledger
-export LEDGER_PRICE_DB=~/finances/prices_db.ledger
-
-export ANDROID_HOME=/Users/$USER/Library/Android/sdk
-export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-
-# Go installation
-export GOPATH=~/.go
-export PATH=$PATH:$(go env GOPATH)/bin
