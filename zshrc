@@ -47,9 +47,6 @@ then
     export WORKON_HOME="~/.virtualenvs"
     export VIRTUALENVWRAPPER_PYTHON=`which python3`
 
-    [[ -e /usr/local/bin/virtualenvwrapper.sh ]] && source /usr/local/bin/virtualenvwrapper.sh
-    [[ -e /opt/homebrew/bin/virtualenvwrapper.sh ]] && source /opt/homebrew/bin/virtualenvwrapper.sh
-
     export PATH="/usr/local/bin:$PATH:/usr/local/share/npm/bin"
     export PATH="$HOME/bin:$PATH"
     [[ -e $HOME/.rbenv ]] && export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
@@ -75,8 +72,6 @@ then
     export NVM_DIR="/Users/powersurge360/.nvm"
     [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-    [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
     export LEDGER_FILE=~/finances/finances.ledger
     export LEDGER_PRICE_DB=~/finances/prices_db.ledger
 
@@ -91,3 +86,7 @@ then
 
     [[ -e ~/.google_appengine ]] && export PATH=$PATH:~/.google_appengine
 fi
+
+[[ -e /usr/local/bin/virtualenvwrapper.sh ]] && source /usr/local/bin/virtualenvwrapper.sh
+[[ -e /opt/homebrew/bin/virtualenvwrapper.sh ]] && source /opt/homebrew/bin/virtualenvwrapper.sh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
