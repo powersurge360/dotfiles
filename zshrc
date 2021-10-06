@@ -47,8 +47,6 @@ then
     export WORKON_HOME="~/.virtualenvs"
     export VIRTUALENVWRAPPER_PYTHON=`which python3`
 
-    export PATH="/usr/local/bin:$PATH:/usr/local/share/npm/bin"
-    export PATH="$HOME/bin:$PATH"
     [[ -e $HOME/.rbenv ]] && export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
     [[ -e $HOME/.rbenv ]] && eval "$(rbenv init -)"
 
