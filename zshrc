@@ -90,3 +90,5 @@ fi
 [[ -e /usr/local/bin/virtualenvwrapper.sh ]] && source /usr/local/bin/virtualenvwrapper.sh
 [[ -e /opt/homebrew/bin/virtualenvwrapper.sh ]] && source /opt/homebrew/bin/virtualenvwrapper.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+eval "$(rbenv init - zsh)"
