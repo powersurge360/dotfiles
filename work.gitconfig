@@ -1,2 +1,5 @@
 [user]
 	email = kevin.diale@drizly.com
+
+[url "git@github-work"]
+	insteadOf = git@github.com

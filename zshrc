@@ -47,8 +47,6 @@ then
     export WORKON_HOME="~/.virtualenvs"
     export VIRTUALENVWRAPPER_PYTHON=`which python3`
 
-    export PATH="/usr/local/bin:$PATH:/usr/local/share/npm/bin"
-    export PATH="$HOME/bin:$PATH"
     [[ -e $HOME/.rbenv ]] && export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
     [[ -e $HOME/.rbenv ]] && eval "$(rbenv init -)"
 
@@ -70,7 +68,9 @@ then
             eval "$("$BASE16_SHELL/profile_helper.sh")"
 
     export NVM_DIR="/Users/powersurge360/.nvm"
-    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+    [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+    [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
     export LEDGER_FILE=~/finances/finances.ledger
     export LEDGER_PRICE_DB=~/finances/prices_db.ledger
@@ -90,3 +90,5 @@ fi
 [[ -e /usr/local/bin/virtualenvwrapper.sh ]] && source /usr/local/bin/virtualenvwrapper.sh
 [[ -e /opt/homebrew/bin/virtualenvwrapper.sh ]] && source /opt/homebrew/bin/virtualenvwrapper.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+eval "$(rbenv init - zsh)"

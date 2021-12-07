@@ -97,6 +97,8 @@ au BufNewFile,BufRead *.wiki set nolist
 au BufNewFile,BufRead *.markdown set linebreak
 au BufNewFile,BufRead *.markdown set nolist
 au BufNewFile,BufRead *.php set autoindent
+" Temporary
+au BufNewFile,BufRead *.heex set filetype=html.eruby
 
 " Telescope setup
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
@@ -106,7 +108,6 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 map <c-o> :NERDTreeToggle<CR>
 
-" Treesitter module set up
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
   ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
