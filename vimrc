@@ -11,7 +11,7 @@ Plug 'chriskempson/base16-vim'
 " IDE functionality
 Plug 'tpope/vim-rails'
 Plug 'sjl/gundo.vim'
-" Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'tpope/vim-sleuth'
@@ -70,7 +70,7 @@ highlight clear SignColumn
 set directory=/tmp
 autocmd FileType make setlocal noexpandtab
 
-" let g:ale_set_highlights = 0
+let g:ale_set_highlights = 0
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:python_host_prog = '/usr/local/bin/python3'
