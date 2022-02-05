@@ -9,7 +9,6 @@ Plug 'pwntester/octo.nvim'
 Plug 'chriskempson/base16-vim'
 
 " IDE functionality
-Plug 'tpope/vim-rails'
 Plug 'sjl/gundo.vim'
 Plug 'dense-analysis/ale'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -28,10 +27,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
 Plug 'kyazdani42/nvim-web-devicons'
-
-" Non-editor functionality
-Plug 'vimwiki/vimwiki'
-Plug 'junegunn/goyo.vim'
 
 " Other
 Plug 'chrisbra/csv.vim'
@@ -71,6 +66,15 @@ set directory=/tmp
 autocmd FileType make setlocal noexpandtab
 
 let g:ale_set_highlights = 0
+let g:ale_linters_ignore = {
+     \ 'ruby': ['rubocop']
+     \}
+let g:ale_fixers = {
+     \ 'javascript': ['prettier'],
+     \ 'css': ['prettier'],
+     \ 'ruby': ['standardrb']
+     \}
+let g:ale_fix_on_save = 1
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:python_host_prog = '/usr/local/bin/python3'
