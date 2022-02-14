@@ -17,6 +17,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-rails'
 
+" LSP Config
 Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/nvim-lsp-installer'
 Plug 'hrsh7th/cmp-nvim-lsp'
@@ -230,7 +231,16 @@ lua <<EOF
         else
           fallback()
         end
-    end, {"i","s","c",}),
+      end, {"i","s","c",}),
+      ["<S-Tab>"] = cmp.mapping(function(fallback)
+      -- This little snippet will confirm with tab, and if no entry is selected, will confirm the first item
+        if cmp.visible() then
+          local entry = cmp.get_selected_entry()
+          cmp.select_prev_item({ behavior = cmp.SelectBehavior.Select })
+        else
+          fallback()
+        end
+      end, {"i","s","c",}),
     },
     sources = cmp.config.sources({
       { name = 'nvim_lsp' },
