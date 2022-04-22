@@ -135,7 +135,26 @@ smap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-T
 
 lua <<EOF
   require'nvim-treesitter.configs'.setup {
-    ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+    ensure_installed = {
+      "css",
+      "elixir",
+      "go",
+      "gomod",
+      "gowork",
+      "heex",
+      "html",
+      "javascript",
+      "json",
+      "markdown",
+      "php",
+      "python",
+      "ruby",
+      "scss",
+      "svelte",
+      "typescript",
+      "vim",
+      "yaml",
+    }, -- one of "all", "maintained" (parsers with maintainers), or a list of languages
     highlight = {
       enable = true,              -- false will disable the whole extension
       disable = { "c", "rust" },  -- list of language that will be disabled
