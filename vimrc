@@ -2,8 +2,6 @@ call plug#begin()
 
 " Git
 Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
-Plug 'pwntester/octo.nvim'
 
 " Themes
 Plug 'chriskempson/base16-vim'
@@ -160,14 +158,7 @@ lua <<EOF
       disable = { "c", "rust" },  -- list of language that will be disabled
     },
   }
-EOF
 
-" Octo set up
-lua <<EOF
-  require"octo".setup()
-EOF
-
-lua <<EOF
   -- Mappings for lspconfig.
   -- See `:help vim.diagnostic.*` for documentation on any of the below functions
   local opts = { noremap=true, silent=true }
