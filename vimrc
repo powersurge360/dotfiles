@@ -107,6 +107,7 @@ au BufNewFile,BufRead *.ssi setlocal filetype=html
 au BufNewFile,BufRead *.md setlocal filetype=markdown
 au BufNewFile,BufRead *.deface setlocal filetype=html.eruby
 au BufNewFile,BufRead *.jbuilder setlocal filetype=ruby
+au BufNewFile,BufRead *.thor setlocal filetype=ruby
 au BufNewFile,BufRead *.md set wrap
 au BufNewFile,BufRead *.md set linebreak
 au BufNewFile,BufRead *.md set nolist
