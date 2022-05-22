@@ -14,6 +14,8 @@ Plug 'tpope/vim-sleuth'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-rails'
+Plug 'godlygeek/tabular'
+Plug 'preservim/vim-markdown'
 
 " LSP Config
 Plug 'neovim/nvim-lspconfig'
