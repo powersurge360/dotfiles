@@ -80,7 +80,8 @@ autocmd FileType make setlocal noexpandtab
 
 let g:ale_set_highlights = 0
 let g:ale_linters_ignore = {
-     \ 'ruby': ['rubocop']
+     \ 'ruby': ['rubocop'],
+     \ 'eruby': ['erb']
      \}
 let g:ale_fixers = {
      \ 'javascript': ['prettier'],
