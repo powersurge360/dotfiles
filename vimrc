@@ -14,6 +14,8 @@ Plug 'tpope/vim-sleuth'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-rails'
+Plug 'godlygeek/tabular'
+Plug 'preservim/vim-markdown'
 
 " LSP Config
 Plug 'neovim/nvim-lspconfig'
@@ -78,7 +80,8 @@ autocmd FileType make setlocal noexpandtab
 
 let g:ale_set_highlights = 0
 let g:ale_linters_ignore = {
-     \ 'ruby': ['rubocop']
+     \ 'ruby': ['rubocop'],
+     \ 'eruby': ['erb']
      \}
 let g:ale_fixers = {
      \ 'javascript': ['prettier'],
