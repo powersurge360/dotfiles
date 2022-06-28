@@ -58,6 +58,8 @@ export VIRTUALENVWRAPPER_PYTHON=`which python3`
 [[ -e $HOME/.activator ]] && export PATH=~/.activator:$PATH
 [[ -e $HOME/.android ]] && export ANDROID_HOME=~/Android/Sdk
 
+[[ -e $HOME/.emacs.d ]] && export PATH="$HOME/.emacs.d/bin:$PATH/"
+
 export PATH=~/.local/bin:$PATH
 
 ### Added by the Heroku Toolbelt
