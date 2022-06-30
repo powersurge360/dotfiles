@@ -42,6 +42,7 @@
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/")
 
+(setq tramp-terminal-type "tramp")
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
@@ -74,3 +75,11 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+;; I prefer TODO instead of [ ]. Pop off the default and replace it w/ TODO
+(after! org
+  (pop org-capture-templates)
+  (add-to-list 'org-capture-templates
+               '("t" "Personal todo" entry
+                (file+headline +org-capture-todo-file "Inbox")
+                "* TODO %?\n%i\n%a" :prepend t)))
