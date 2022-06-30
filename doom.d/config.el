@@ -83,6 +83,3 @@
                '("t" "Personal todo" entry
                 (file+headline +org-capture-todo-file "Inbox")
                 "* TODO %?\n%i\n%a" :prepend t)))
-
-(after! eglot
-  (setq eglot-ignored-server-capabilites '(:documentHighlightProvider)))
