@@ -76,8 +76,13 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
-;; I prefer TODO instead of [ ]. Pop off the default and replace it w/ TODO
 (after! org
+  ;; Set org roam to org-roam folder
+  (unless (file-exists-p (file-truename "~/org-roam"))
+        (make-directory (file-truename "~/org-roam")))
+  (setq org-roam-directory (file-truename "~/org-roam"))
+
+  ;; I prefer TODO instead of [ ]. Pop off the default and replace it w/ TODO
   (pop org-capture-templates)
   (add-to-list 'org-capture-templates
                '("t" "Personal todo" entry
