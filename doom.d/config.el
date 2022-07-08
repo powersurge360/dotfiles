@@ -82,9 +82,6 @@
         (make-directory (file-truename "~/org-roam")))
   (setq org-roam-directory (file-truename "~/org-roam"))
 
-  ;; Log state changes into a drawer instead of loosely
-  (setq org-log-into-drawer t)
-
   ;; I prefer TODO instead of [ ]. Pop off the default and replace it w/ TODO
   (pop org-capture-templates)
   (add-to-list 'org-capture-templates
