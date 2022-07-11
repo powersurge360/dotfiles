@@ -89,4 +89,5 @@ export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 [[ -e /opt/homebrew/bin/virtualenvwrapper.sh ]] && source /opt/homebrew/bin/virtualenvwrapper.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-  . /opt/homebrew/opt/asdf/libexec/asdf.sh
+[[ -d /usr/local/opt/asdf ]] && . /usr/local/opt/asdf/libexec/asdf.sh
+[[ -d /opt/homebrew/opt/asdf ]] && . /opt/homebrew/opt/asdf/libexec/asdf.sh
