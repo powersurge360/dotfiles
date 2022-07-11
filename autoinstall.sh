@@ -10,10 +10,10 @@ ln -s ~/dotfiles/zshrc ~/.zshrc
 ln -s ~/dotfiles/vimrc ~/.vimrc
 ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 ln -s ~/dotfiles/base16-shell ~/.config/base16-shell
-ln -s ~/dotfiles/spacemacs ~/.spacemacs
 ln -s ~/dotfiles/doom.d ~/.doom.d
 mkdir ~/.vim
 cp -R ~/dotfiles/vim/autoload ~/.vim/
 ln -s ~/.vim ~/.config/nvim
 ln -s ~/.vimrc ~/.config/nvim/init.vim
 ln -s ~/dotfiles/tern-config ~/.tern-config
+ln -s ~/dotfiles/config.lua ~/.config/lvim/config.lua
