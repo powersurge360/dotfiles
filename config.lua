@@ -82,8 +82,6 @@ lvim.builtin.treesitter.ensure_installed = {
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enabled = true
 
-require('lspconfig').solargraph.setup {}
-
 -- generic LSP settings
 
 -- ---@usage disable automatic installation of servers
@@ -94,6 +92,8 @@ require('lspconfig').solargraph.setup {}
 vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "solargraph" })
 -- local opts = {} -- check the lspconfig documentation for a list of all possible options
 -- require("lvim.lsp.manager").setup("pyright", opts)
+
+require('lspconfig').solargraph.setup {}
 
 -- ---remove a server from the skipped list, e.g. eslint, or emmet_ls. !!Requires `:LvimCacheReset` to take effect!!
 -- ---`:LvimInfo` lists which server(s) are skiipped for the current filetype
