@@ -44,6 +44,10 @@
 
 (setq tramp-terminal-type "tramp")
 
+;; This works better for pasting into slack
+(setq ox-clip-osx-cmd
+  "hexdump -ve '1/1 \"%.2x\"' | xargs printf \"set the clipboard to {text:\\\" \\\", «class HTML»:«data HTML%s»}\" | osascript -")
+
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
 ;;
