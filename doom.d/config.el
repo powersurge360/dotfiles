@@ -86,6 +86,7 @@
         (make-directory (file-truename "~/org-roam")))
   (setq org-roam-directory (file-truename "~/org-roam"))
 
+  ;; Logs closing time for TODOs
   (setq org-log-done 'time)
 
   ;; I prefer TODO instead of [ ]. Pop off the default and replace it w/ TODO
