@@ -17,3 +17,4 @@ ln -s ~/.vim ~/.config/nvim
 ln -s ~/.vimrc ~/.config/nvim/init.vim
 ln -s ~/dotfiles/tern-config ~/.tern-config
 ln -s ~/dotfiles/config.lua ~/.config/lvim/config.lua
+ln -s ~/dotfiles/kitty.conf ~/.config/kitty/kitty.conf
