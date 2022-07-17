@@ -2,7 +2,6 @@
 
 mkdir ~/.config
 ln -s ~/dotfiles/gitignore ~/.gitignore
-ln -s ~/dotfiles/ackrc ~/.ackrc
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
 ln -s ~/dotfiles/work.gitconfig ~/.work.gitconfig
 ln -s ~/dotfiles/oh-my-zsh ~/.oh-my-zsh
@@ -15,6 +14,5 @@ mkdir ~/.vim
 cp -R ~/dotfiles/vim/autoload ~/.vim/
 ln -s ~/.vim ~/.config/nvim
 ln -s ~/.vimrc ~/.config/nvim/init.vim
-ln -s ~/dotfiles/tern-config ~/.tern-config
 ln -s ~/dotfiles/config.lua ~/.config/lvim/config.lua
 ln -s ~/dotfiles/kitty.conf ~/.config/kitty/kitty.conf
