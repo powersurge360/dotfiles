@@ -46,7 +46,7 @@ fi
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
 
-export EDITOR="emacs -nw"
+export EDITOR="lvim"
 
 export CLASSPATH="."
 export WORKON_HOME="~/.virtualenvs"
