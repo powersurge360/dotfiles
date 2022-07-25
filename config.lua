@@ -11,9 +11,10 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
-lvim.colorscheme = "doom-one"
+lvim.colorscheme = "tokyonight"
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
+lvim.transparent_window = true
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
@@ -155,7 +156,7 @@ require('lspconfig').solargraph.setup {}
 -- }
 lvim.plugins = {
   "tpope/vim-surround",
-  "NTBBloodbath/doom-one.nvim"
+  "folke/tokyonight.nvim"
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)

@@ -66,10 +66,10 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 [[ -e $HOME/.ansible ]] && export ANSIBLE_ROLES_PATH=$HOME/.ansible/roles
 
-BASE16_SHELL=$HOME/.config/base16-shell/
-[ -n "$PS1" ] && \
-    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
-        eval "$("$BASE16_SHELL/profile_helper.sh")"
+# BASE16_SHELL=$HOME/.config/base16-shell/
+# [ -n "$PS1" ] && \
+#     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+#         eval "$("$BASE16_SHELL/profile_helper.sh")"
 
 export LEDGER_FILE=~/finances/finances.ledger
 export LEDGER_PRICE_DB=~/finances/prices_db.ledger
