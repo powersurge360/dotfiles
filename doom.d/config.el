@@ -91,6 +91,9 @@
   ;; Logs closing time for TODOs
   (setq org-log-done 'time)
 
+  ;; I don't care about hours laddering up to days
+  (setq org-duration-format 'h:mm)
+
   ;; I prefer TODO instead of [ ]. Pop off the default and replace it w/ TODO
   (pop org-capture-templates)
   (add-to-list 'org-capture-templates
