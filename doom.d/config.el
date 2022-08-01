@@ -44,8 +44,6 @@
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/")
 
-(setq tramp-terminal-type "tramp")
-
 ;; This works better for pasting into slack
 (setq ox-clip-osx-cmd
   "hexdump -ve '1/1 \"%.2x\"' | xargs printf \"set the clipboard to {text:\\\" \\\", «class HTML»:«data HTML%s»}\" | osascript -")
