@@ -14,7 +14,7 @@ lvim.format_on_save = true
 lvim.colorscheme = "dracula"
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
-lvim.transparent_window = true
+-- lvim.transparent_window = true
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
