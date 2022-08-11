@@ -48,9 +48,6 @@
 (setq ox-clip-osx-cmd
   "hexdump -ve '1/1 \"%.2x\"' | xargs printf \"set the clipboard to {text:\\\" \\\", «class HTML»:«data HTML%s»}\" | osascript -")
 
-;; Enable word count when making a selection.
-(setq doom-modeline-enable-word-count t)
-
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
 ;;
