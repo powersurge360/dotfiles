@@ -49,8 +49,6 @@ export PATH="/opt/homebrew/sbin:$PATH"
 export EDITOR="lvim"
 
 export CLASSPATH="."
-export WORKON_HOME="~/.virtualenvs"
-export VIRTUALENVWRAPPER_PYTHON=`which python3`
 
 [[ -e $HOME/.android ]] && export PATH="$HOME/.android/platform-tools:$HOME/.android/tools:$PATH"
 [[ -e $HOME/.android-studio ]] && export PATH="$HOME/.android-studio/bin:$PATH"
@@ -85,8 +83,6 @@ export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 [[ -e ~/.google_appengine ]] && export PATH=$PATH:~/.google_appengine
 
-[[ -e /usr/local/bin/virtualenvwrapper.sh ]] && source /usr/local/bin/virtualenvwrapper.sh
-[[ -e /opt/homebrew/bin/virtualenvwrapper.sh ]] && source /opt/homebrew/bin/virtualenvwrapper.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 [[ -d /usr/local/opt/asdf ]] && . /usr/local/opt/asdf/libexec/asdf.sh
