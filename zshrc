@@ -1,4 +1,4 @@
-[[ $TERM == "dumb" ]] && unsetopt zle && PS1='$ ' && return
+# [[ $TERM == "dumb" ]] && unsetopt zle && PS1='$ ' && return
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 DEFAULT_USER=powersurge360
@@ -87,3 +87,8 @@ export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 [[ -d /usr/local/opt/asdf ]] && . /usr/local/opt/asdf/libexec/asdf.sh
 [[ -d /opt/homebrew/opt/asdf ]] && . /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+# pnpm
+export PNPM_HOME="/Users/powersurge360/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
