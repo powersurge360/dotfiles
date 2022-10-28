@@ -41,7 +41,6 @@ Style/FrozenStringLiteralComment:
 
 Layout/EmptyLineAfterMagicComment:
   Enabled: true
-  SafeAutoCorrect: true
 EOL
 
 create_file ".rubocop.yml", rubocop_config
