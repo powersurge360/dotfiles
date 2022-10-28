@@ -6,10 +6,11 @@ gem_group :development, :test  do
   gem "rspec-rails"
   gem "lookbook"
   gem "dotenv-rails"
+  gem "factory_bot_rails"
 end
 
 gem_group :development do
-  gem "rubocop-shopify", require: false
+  gem "rubocop-github", require: false
   gem "solargraph", require: false
   gem "brakeman"
   gem "bundle-audit"
@@ -31,7 +32,9 @@ run "bundle binstubs bundler-audit"
 
 rubocop_config = <<-EOL
 inherit_gem:
-  rubocop-shopify: rubocop.yml
+  rubocop-github:
+    - config/default.yml
+    - config/rails.yml
 EOL
 
 create_file '.rubocop.yml', rubocop_config
