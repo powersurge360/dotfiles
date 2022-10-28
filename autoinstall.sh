@@ -18,3 +18,4 @@ ln -s ~/dotfiles/config.lua ~/.config/lvim/config.lua
 mkdir -p ~/.config/kitty
 ln -s ~/dotfiles/kitty.conf ~/.config/kitty/kitty.conf
 ln -s ~/dotfiles/railsrc ~/.railsrc
+ln -s ~/dotfiles/asdfrc ~/.asdfrc
