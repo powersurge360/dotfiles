@@ -37,7 +37,11 @@ inherit_gem:
     - config/rails.yml
 
 Style/FrozenStringLiteralComment:
-  SafeAutoCorrect: True
+  SafeAutoCorrect: true
+
+Layout/EmptyLineAfterMagicComment:
+  Enabled: true
+  SafeAutoCorrect: true
 EOL
 
-create_file '.rubocop.yml', rubocop_config
+create_file ".rubocop.yml", rubocop_config
