@@ -155,7 +155,7 @@ require('lspconfig').solargraph.setup {}
 -- }
 lvim.plugins = {
   "tpope/vim-surround",
-  "Mofiqul/dracula.nvim"
+  "folke/tokyonight.nvim"
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
