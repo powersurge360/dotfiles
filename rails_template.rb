@@ -16,9 +16,12 @@ gem_group :development do
   gem "bundle-audit"
 end
 
-environment do
-  "config.view_component.generate.preview = true"
-end
+environment "config.view_component.generate.preview = true"
+environment <<EOL
+config.lookbook.preview_display_options = {
+    wrapper: true
+}
+EOL
 
 run "bundle install"
 
