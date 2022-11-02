@@ -1,6 +1,4 @@
 gem "view_component"
-gem "cssbundling-rails"
-gem "vite_rails"
 
 gem_group :development, :test  do
   gem "rspec-rails"
@@ -26,9 +24,6 @@ EOL
 run "bundle install"
 
 generate "rspec:install"
-rails_command "css:install:tailwind"
-
-run "bundle exec vite install"
 
 run "bundle binstubs brakeman"
 run "bundle binstubs bundler-audit"
