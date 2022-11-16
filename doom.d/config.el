@@ -87,7 +87,7 @@
   (setq org-roam-directory (file-truename "~/org-roam"))
 
   ;; Logs closing time for TODOs
-  (setq org-log-done 'time)
+  ;; (setq org-log-done 'time)
 
   ;; I don't care about hours laddering up to days
   (setq org-duration-format 'h:mm)
