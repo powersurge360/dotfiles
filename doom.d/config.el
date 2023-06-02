@@ -101,3 +101,8 @@
 
   ;; Syntax highlighting in markdown
   (setq markdown-fontify-code-blocks-natively t))
+
+;; The diagnostics from solargraph are, generally, too noisy
+(add-hook! ruby-mode
+  (setq-local flycheck-checker 'ruby-rubocop)
+)
