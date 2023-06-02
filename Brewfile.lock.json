@@ -2,19 +2,19 @@
   "entries": {
     "tap": {
       "homebrew/bundle": {
-        "revision": "73b77351709591cadc3f4a918b3276ee82cafbad"
+        "revision": "b2b11e80323b5d938aec80b3fd07e95348d911b4"
       },
       "homebrew/cask": {
-        "revision": "7540642ae818972f94e32658bc1a42c7b3964468"
+        "revision": "8c00be0eec3c091a8dbabc0f9d48b7f840c1a74d"
       },
       "homebrew/cask-fonts": {
-        "revision": "acadf2ba9a0e5508e7e945076eb26b7d549236ca"
+        "revision": "58fcdda81696a186d0defd8dd0c7f9d189fabb31"
       },
       "homebrew/core": {
-        "revision": "95d9266e4a3cc1038134e7c4ea669dedcaa280f3"
+        "revision": "95df2fadbc831dac5fcacf53ef04c252ada80eb9"
       },
       "homebrew/services": {
-        "revision": "954801711b1562739176e83bc0ce0a265abdea98"
+        "revision": "507510e783fe37293220253caff0d76f72c5daed"
       },
       "mongodb/brew": {
         "revision": "a6fc17705f0147978542b917f065179a2b0d6f93"
@@ -23,7 +23,10 @@
         "revision": "313150094bba8e3b81591e7bdebd94392b75cfb4"
       },
       "heroku/brew": {
-        "revision": "e135c620ab55ae195aa89ef348ed5b6d0c16150a"
+        "revision": "7713383db6de1631fb8cad1c50d70b506d81c578"
+      },
+      "railwaycat/emacsmacport": {
+        "revision": "622c7bf0b236e1e1b61a858a4c179e5c446a81a0"
       }
     },
     "brew": {
@@ -2194,6 +2197,17 @@
             }
           }
         }
+      },
+      "railwaycat/emacsmacport/emacs-mac": {
+        "version": "emacs-28.2-mac-9.1",
+        "bottle": false,
+        "options": {
+          "args": [
+            "with-emacs-sexy-icon",
+            "with-native-comp",
+            "with-modules"
+          ]
+        }
       }
     },
     "cask": {
@@ -2258,6 +2272,14 @@
         "CLT": "14.0.0.0.1.1661618636",
         "Xcode": "14.0",
         "macOS": "12.6"
+      },
+      "ventura": {
+        "HOMEBREW_VERSION": "4.0.20",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "api",
+        "CLT": "14.3.1.0.1.1683849156",
+        "Xcode": "14.3",
+        "macOS": "13.4"
       }
     }
   }

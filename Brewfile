@@ -1,4 +1,4 @@
-tap 'd12frosted/emacs-plus'
+tap 'railwaycat/emacsmacport'
 tap 'heroku/brew'
 tap 'homebrew/bundle'
 tap 'homebrew/cask'
@@ -45,7 +45,7 @@ brew 'shellcheck'
 brew 'subversion'
 brew 'tmux'
 brew 'wget'
-brew 'd12frosted/emacs-plus/emacs-plus@29', args: ['with-modern-doom3-icon', 'with-native-comp']
+brew 'railwaycat/emacsmacport/emacs-mac', args: ['with-emacs-sexy-icon', 'with-native-comp', 'with-modules']
 brew 'heroku/brew/heroku'
 cask 'kitty'
 cask 'rar'
