@@ -27,6 +27,7 @@ generate "rspec:install"
 
 run "bundle binstubs brakeman"
 run "bundle binstubs bundler-audit"
+run "bundle binstubs rubocop"
 
 rubocop_config = <<-EOL
 inherit_gem:
@@ -42,3 +43,6 @@ Layout/EmptyLineAfterMagicComment:
 EOL
 
 create_file ".rubocop.yml", rubocop_config
+
+# Run rubocop against default files to start off with everything fixed
+run "rubocop -A ."
