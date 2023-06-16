@@ -70,4 +70,7 @@ EOL
 
 create_file "tsconfig.json", esbuild_config
 
-generate "dockerfile"
+# Needs to be in the after bundle to make sure all dependencies are captured, unfortunately
+after_bundle do
+  generate "dockerfile --yjit"
+end
