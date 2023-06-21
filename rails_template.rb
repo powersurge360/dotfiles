@@ -57,18 +57,19 @@ create_file ".rubocop.yml", rubocop_config
 # Run rubocop against default files to start off with everything fixed
 run "rubocop -A ."
 
-esbuild_config = <<-EOL
-{
-  "compilerOptions": {
-    "paths": {
-      "components/*": ["./app/components/*"]
-    }
-  },
-  "include": []
-}
-EOL
+# Problems with the manifest make this a little tedious to use
+# esbuild_config = <<-EOL
+# {
+#   "compilerOptions": {
+#     "paths": {
+#       "components/*": ["./app/components/*"]
+#     }
+#   },
+#   "include": []
+# }
+# EOL
 
-create_file "tsconfig.json", esbuild_config
+# create_file "tsconfig.json", esbuild_config
 
 # Needs to be in the after bundle to make sure all dependencies are captured, unfortunately
 after_bundle do
