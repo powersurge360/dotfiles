@@ -45,6 +45,9 @@ inherit_gem:
     - config/default.yml
     - config/rails.yml
 
+AllCops:
+  NewCops: disable
+
 Style/FrozenStringLiteralComment:
   SafeAutoCorrect: true
 
