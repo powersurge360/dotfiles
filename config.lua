@@ -6,7 +6,7 @@
 lvim.format_on_save.enabled = true
 
 -- For some reason solargraph doesn't play nicely
-require('lspconfig').solargraph.setup {}
+-- require('lspconfig').solargraph.setup {}
 
 lvim.plugins = {
   "tpope/vim-surround",
