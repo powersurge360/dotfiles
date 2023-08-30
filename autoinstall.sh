@@ -1,5 +1,8 @@
 #!/usr/bin/env sh
 
+# Set up non-brew dependencies
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 mkdir ~/.config
 ln -s ~/dotfiles/gitignore ~/.gitignore
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
