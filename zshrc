@@ -1,7 +1,7 @@
 [[ $TERM == "dumb" ]] && unsetopt zle && PS1='$ ' && return
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
-DEFAULT_USER=kevin.diale
+DEFAULT_USER=powersurge360
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
