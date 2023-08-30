@@ -52,3 +52,6 @@
 ;; Mermaid goodness
 (package! ob-mermaid)
 (package! mermaid-mode)
+
+;; Catppuccin set up
+(package! catppuccin-theme)
