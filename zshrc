@@ -1,13 +1,13 @@
 [[ $TERM == "dumb" ]] && unsetopt zle && PS1='$ ' && return
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
-DEFAULT_USER=powersurge360
+DEFAULT_USER=kevin.diale
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="af-magic"
+ZSH_THEME="agnoster"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -63,11 +63,6 @@ export PATH=~/.local/bin:$PATH
 export PATH="/usr/local/heroku/bin:$PATH"
 
 [[ -e $HOME/.ansible ]] && export ANSIBLE_ROLES_PATH=$HOME/.ansible/roles
-
-# BASE16_SHELL=$HOME/.config/base16-shell/
-# [ -n "$PS1" ] && \
-#     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
-#         eval "$("$BASE16_SHELL/profile_helper.sh")"
 
 export LEDGER_FILE=~/finances/finances.ledger
 export LEDGER_PRICE_DB=~/finances/prices_db.ledger
