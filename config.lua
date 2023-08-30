@@ -10,4 +10,7 @@ lvim.format_on_save.enabled = true
 
 lvim.plugins = {
   "tpope/vim-surround",
+  "catppuccin/nvim"
 }
+
+lvim.colorscheme = "catppuccin-mocha"

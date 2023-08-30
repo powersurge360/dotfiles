@@ -1,9 +1,13 @@
+### Feature checks ###
+
 def natively_supports_docker?
   docker_supported_version = Gem::Version.new("7.1")
   this_rails_version = Gem::Version.new(Rails.version) 
 
   this_rails_version > docker_supported_version
 end
+
+### Gems set up ###
 
 gem "view_component"
 
@@ -22,6 +26,8 @@ gem_group :development do
   gem "dockerfile-rails" unless natively_supports_docker?
 end
 
+### Lookbook set up ###
+
 environment "config.view_component.generate.preview = true"
 environment <<EOL,
 config.lookbook.preview_display_options = {
@@ -34,10 +40,14 @@ run "bundle install"
 
 generate "rspec:install"
 
+### Binstubs set up ### 
+
 run "bundle binstubs brakeman"
 run "bundle binstubs bundler-audit"
 run "bundle binstubs rubocop"
 run "bundle binstubs rspec-core"
+
+### Lint set up ###
 
 rubocop_config = <<-EOL
 inherit_gem:
@@ -60,6 +70,8 @@ create_file ".rubocop.yml", rubocop_config
 # Run rubocop against default files to start off with everything fixed
 run "rubocop -A ."
 
+### Javascript set up ###
+
 # Problems with the manifest make this a little tedious to use
 # esbuild_config = <<-EOL
 # {
@@ -73,6 +85,8 @@ run "rubocop -A ."
 # EOL
 
 # create_file "tsconfig.json", esbuild_config
+
+### Deployment set up ###
 
 # Needs to be in the after bundle to make sure all dependencies are captured, unfortunately
 after_bundle do
