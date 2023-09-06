@@ -44,7 +44,7 @@ brew 'ripgrep'
 brew 'shellcheck'
 brew 'subversion'
 brew 'tmux'
-brew 'tmuxp'
+brew 'tmuxinator'
 brew 'wget'
 brew 'railwaycat/emacsmacport/emacs-mac', args: ['with-emacs-sexy-icon', 'with-native-comp', 'with-modules']
 brew 'heroku/brew/heroku'
