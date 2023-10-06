@@ -6,7 +6,6 @@ gem "turbo-rails"
 gem_group :development, :test  do
   gem "rspec-rails"
   gem "lookbook"
-  gem "dotenv-rails"
   gem "factory_bot_rails"
 end
 
