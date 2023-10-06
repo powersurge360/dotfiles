@@ -1,15 +1,7 @@
-### Feature checks ###
-
-def natively_supports_docker?
-  docker_supported_version = Gem::Version.new("7.1")
-  this_rails_version = Gem::Version.new(Rails.version) 
-
-  this_rails_version > docker_supported_version
-end
-
 ### Gems set up ###
 
 gem "view_component"
+gem "turbo-rails"
 
 gem_group :development, :test  do
   gem "rspec-rails"
@@ -23,7 +15,6 @@ gem_group :development do
   gem "solargraph", require: false
   gem "brakeman"
   gem "bundle-audit"
-  gem "dockerfile-rails" unless natively_supports_docker?
 end
 
 ### Lookbook set up ###
@@ -36,16 +27,16 @@ config.lookbook.preview_display_options = {
 EOL
   env: "development"
 
-run "bundle install"
+lookbook_route = <<-EOL
 
-generate "rspec:install"
+  # Mount the lookbook engine
 
-### Binstubs set up ### 
+  if Rails.env.development?
+    mount Lookbook::Engine, at: "/lookbook"
+  end
+EOL
 
-run "bundle binstubs brakeman"
-run "bundle binstubs bundler-audit"
-run "bundle binstubs rubocop"
-run "bundle binstubs rspec-core"
+insert_into_file "config/routes.rb", lookbook_route, before: "end"
 
 ### Lint set up ###
 
@@ -67,9 +58,6 @@ EOL
 
 create_file ".rubocop.yml", rubocop_config
 
-# Run rubocop against default files to start off with everything fixed
-run "rubocop -A ."
-
 ### Javascript set up ###
 
 # Problems with the manifest make this a little tedious to use
@@ -86,9 +74,31 @@ run "rubocop -A ."
 
 # create_file "tsconfig.json", esbuild_config
 
-### Deployment set up ###
+run "yarn add alpinejs"
+
+application_js = <<-EOL
+import Alpine from 'alpinejs';
+
+window.Alpine = Alpine;
+
+Alpine.start();
+EOL
+
 
 # Needs to be in the after bundle to make sure all dependencies are captured, unfortunately
 after_bundle do
   generate "dockerfile --yjit"
+  generate "rspec:install"
+  rails_command "turbo:install"
+
+  insert_into_file "app/javascript/application.js", application_js
+
+  ### Binstubs set up ###
+
+  run "bundle binstubs brakeman"
+  run "bundle binstubs bundler-audit"
+  run "bundle binstubs rubocop"
+  run "bundle binstubs rspec-core"
+
+  run "rubocop -A ."
 end
