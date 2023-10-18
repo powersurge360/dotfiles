@@ -1,4 +1,3 @@
 --javascript=esbuild
 --css=tailwind
---skip-hotwire
 --template=~/dotfiles/rails_template.rb

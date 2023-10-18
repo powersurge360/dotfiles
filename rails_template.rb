@@ -1,7 +1,7 @@
 ### Gems set up ###
 
 gem "view_component"
-gem "turbo-rails"
+# gem "turbo-rails"
 
 gem_group :development, :test  do
   gem "rspec-rails"
@@ -12,34 +12,36 @@ end
 gem_group :development do
   gem "rubocop-github", require: false
   gem "solargraph", require: false
+  gem "solargraph-rails", require: false
   gem "brakeman"
   gem "bundle-audit"
+  gem "bullet"
 end
 
 ### Lookbook set up ###
 
 environment "config.view_component.generate.preview = true"
-environment <<EOL,
+environment <<RUBY,
 config.lookbook.preview_display_options = {
     wrapper: true
 }
-EOL
+RUBY
   env: "development"
 
-lookbook_route = <<-EOL
+lookbook_route = <<-RUBY
 
   # Mount the lookbook engine
 
   if Rails.env.development?
     mount Lookbook::Engine, at: "/lookbook"
   end
-EOL
+RUBY
 
 insert_into_file "config/routes.rb", lookbook_route, before: "end"
 
 ### Lint set up ###
 
-rubocop_config = <<-EOL
+rubocop_config = <<-YAML
 inherit_gem:
   rubocop-github:
     - config/default.yml
@@ -53,7 +55,7 @@ Style/FrozenStringLiteralComment:
 
 Layout/EmptyLineAfterMagicComment:
   Enabled: true
-EOL
+YAML
 
 create_file ".rubocop.yml", rubocop_config
 
@@ -73,24 +75,25 @@ create_file ".rubocop.yml", rubocop_config
 
 # create_file "tsconfig.json", esbuild_config
 
-run "yarn add alpinejs"
+# run "yarn add alpinejs"
 
-application_js = <<-EOL
-import Alpine from 'alpinejs';
+# application_js = <<-EOL
+# import Alpine from 'alpinejs';
 
-window.Alpine = Alpine;
+# window.Alpine = Alpine;
 
-Alpine.start();
-EOL
+# Alpine.start();
+# EOL
 
 
 # Needs to be in the after bundle to make sure all dependencies are captured, unfortunately
 after_bundle do
   generate "dockerfile --yjit"
   generate "rspec:install"
-  rails_command "turbo:install"
+  generate "bullet:install"
+  # rails_command "turbo:install"
 
-  insert_into_file "app/javascript/application.js", application_js
+  # insert_into_file "app/javascript/application.js", application_js
 
   ### Binstubs set up ###
 
