@@ -1,11 +1,11 @@
 ### Gems set up ###
 
-gem "view_component"
+# gem "view_component"
 # gem "turbo-rails"
 
 gem_group :development, :test  do
   gem "rspec-rails"
-  gem "lookbook"
+  # gem "lookbook"
   gem "factory_bot_rails"
 end
 
@@ -20,24 +20,24 @@ end
 
 ### Lookbook set up ###
 
-environment "config.view_component.generate.preview = true"
-environment <<RUBY,
-config.lookbook.preview_display_options = {
-    wrapper: true
-}
-RUBY
-  env: "development"
-
-lookbook_route = <<-RUBY
-
-  # Mount the lookbook engine
-
-  if Rails.env.development?
-    mount Lookbook::Engine, at: "/lookbook"
-  end
-RUBY
-
-insert_into_file "config/routes.rb", lookbook_route, before: "end"
+# environment "config.view_component.generate.preview = true"
+# environment <<RUBY,
+# config.lookbook.preview_display_options = {
+#     wrapper: true
+# }
+# RUBY
+#   env: "development"
+#
+# lookbook_route = <<-RUBY
+#
+#   # Mount the lookbook engine
+#
+#   if Rails.env.development?
+#     mount Lookbook::Engine, at: "/lookbook"
+#   end
+# RUBY
+#
+# insert_into_file "config/routes.rb", lookbook_route, before: "end"
 
 ### Lint set up ###
 
