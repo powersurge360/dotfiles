@@ -10,12 +10,8 @@ gem_group :development, :test  do
 end
 
 gem_group :development do
-  gem "rubocop-github", require: false
   gem "solargraph", require: false
   gem "solargraph-rails", require: false
-  gem "brakeman"
-  gem "bundle-audit"
-  gem "bullet"
 end
 
 ### Lookbook set up ###
@@ -38,26 +34,6 @@ end
 # RUBY
 #
 # insert_into_file "config/routes.rb", lookbook_route, before: "end"
-
-### Lint set up ###
-
-rubocop_config = <<-YAML
-inherit_gem:
-  rubocop-github:
-    - config/default.yml
-    - config/rails.yml
-
-AllCops:
-  NewCops: disable
-
-Style/FrozenStringLiteralComment:
-  SafeAutoCorrect: true
-
-Layout/EmptyLineAfterMagicComment:
-  Enabled: true
-YAML
-
-create_file ".rubocop.yml", rubocop_config
 
 ### Javascript set up ###
 
@@ -88,19 +64,19 @@ create_file ".rubocop.yml", rubocop_config
 
 # Needs to be in the after bundle to make sure all dependencies are captured, unfortunately
 after_bundle do
-  generate "dockerfile --yjit"
+  # generate "dockerfile --yjit"
   generate "rspec:install"
-  generate "bullet:install"
+  # generate "bullet:install"
   # rails_command "turbo:install"
 
   # insert_into_file "app/javascript/application.js", application_js
 
   ### Binstubs set up ###
 
-  run "bundle binstubs brakeman"
-  run "bundle binstubs bundler-audit"
-  run "bundle binstubs rubocop"
+  # run "bundle binstubs brakeman"
+  # run "bundle binstubs bundler-audit"
+  # run "bundle binstubs rubocop"
   run "bundle binstubs rspec-core"
-
-  run "rubocop -A ."
+  #
+  # run "rubocop -A ."
 end
