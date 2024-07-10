@@ -56,6 +56,7 @@ export CLASSPATH="."
 [[ -e $HOME/.android ]] && export ANDROID_HOME=~/Android/Sdk
 
 [[ -e $HOME/.emacs.d ]] && export PATH="$HOME/.emacs.d/bin:$PATH/"
+[[ -e $HOME/.config/emacs ]] && export PATH="$HOME/.config/emacs/bin:$PATH/"
 
 export PATH=~/.local/bin:$PATH
 
