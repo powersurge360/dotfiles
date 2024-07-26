@@ -48,8 +48,8 @@
 (setq org-directory "~/org/")
 
 ;; This works better for pasting into slack
-(setq ox-clip-osx-cmd
-  "hexdump -ve '1/1 \"%.2x\"' | xargs printf \"set the clipboard to {text:\\\" \\\", «class HTML»:«data HTML%s»}\" | osascript -")
+;; (setq ox-clip-osx-cmd
+;;       "hexdump -ve '1/1 \"%.2x\"' | xargs printf \"set the clipboard to {text:\\\" \\\", «class HTML»:«data HTML%s»}\" | osascript -")
 
 ;; Corrects an issue in vterm
 (setq doom-emoji-fallback-font-families nil)
@@ -89,7 +89,7 @@
 (after! org
   ;; Set org roam to org-roam folder
   (unless (file-exists-p (file-truename "~/org-roam"))
-        (make-directory (file-truename "~/org-roam")))
+    (make-directory (file-truename "~/org-roam")))
   (setq org-roam-directory (file-truename "~/org-roam"))
 
   ;; Logs closing time for TODOs
@@ -102,8 +102,8 @@
   (pop org-capture-templates)
   (add-to-list 'org-capture-templates
                '("t" "Personal todo" entry
-                (file+headline +org-capture-todo-file "Inbox")
-                "* TODO %?\n%i\n%a" :prepend t))
+                 (file+headline +org-capture-todo-file "Inbox")
+                 "* TODO %?\n%i\n%a" :prepend t))
 
   ;; Syntax highlighting in markdown
   (setq markdown-fontify-code-blocks-natively t))
