@@ -48,8 +48,8 @@
 (setq org-directory "~/org/")
 
 ;; This works better for pasting into slack
-;; (setq ox-clip-osx-cmd
-;;       "hexdump -ve '1/1 \"%.2x\"' | xargs printf \"set the clipboard to {text:\\\" \\\", «class HTML»:«data HTML%s»}\" | osascript -")
+(setq ox-clip-osx-cmd
+      "hexdump -ve '1/1 \"%.2x\"' | xargs printf \"set the clipboard to {text:\\\" \\\", «class HTML»:«data HTML%s»}\" | osascript -")
 
 ;; Corrects an issue in vterm
 (setq doom-emoji-fallback-font-families nil)
