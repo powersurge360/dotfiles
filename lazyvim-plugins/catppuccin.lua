@@ -1,8 +1,7 @@
 return {
 	{
-		"LazyVim/LazyVim",
+		"catppuccin/nvim",
 		opts = {
-			colorscheme = "catppuccin",
 			transparent_background = true,
 		},
 	},
