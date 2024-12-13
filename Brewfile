@@ -2,7 +2,6 @@ tap "d12frosted/emacs-plus"
 tap 'heroku/brew'
 tap 'homebrew/bundle'
 tap 'homebrew/services'
-brew 'puma/puma/puma-dev'
 brew 'act'
 brew 'asdf'
 brew 'btop'
