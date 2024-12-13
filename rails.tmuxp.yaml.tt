@@ -1,0 +1,16 @@
+session_name: <%= app_name %>
+start_directory: <%= "~/projects/#{app_name}" %>
+windows:
+  - window_name: editor
+    panes:
+      - $EDITOR
+  - window_name: server
+    layout: main-vertical
+    options:
+      main-pane-width: 60%
+    panes:
+      - shell_command:
+        - 
+        focus: true
+      - bin/dev
+      - btop
