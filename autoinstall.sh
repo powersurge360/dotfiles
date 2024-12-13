@@ -4,7 +4,10 @@
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 git clone https://github.com/LazyVim/starter ~/.config/nvim
-rm -rf ~/.config/nvim/lua/config/ ~/.config/nvim/lua/plugins/
+
+if [ ! -L ~/.config/nvim/lua/config ] then
+  rm -rf ~/.config/nvim/lua/config/ ~/.config/nvim/lua/plugins/
+end
 
 mkdir ~/.config
 ln -s ~/dotfiles/gitignore ~/.gitignore
@@ -13,9 +16,13 @@ ln -s ~/dotfiles/work.gitconfig ~/.work.gitconfig
 ln -s ~/dotfiles/zshrc ~/.zshrc
 ln -s ~/dotfiles/vimrc ~/.vimrc
 ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
-ln -s ~/dotfiles/doom.d ~/.doom.d
-mkdir ~/.vim
-cp -R ~/dotfiles/vim/autoload ~/.vim/
+
+if [ ! -d ~/.doom.d ] then
+  ln -s ~/dotfiles/doom.d ~/.doom.d
+end
+
+# mkdir ~/.vim
+# cp -R ~/dotfiles/vim/autoload ~/.vim/
 # ln -s ~/.vim ~/.config/nvim
 # ln -s ~/.vimrc ~/.config/nvim/init.vim
 ln -s ~/dotfiles/config.lua ~/.config/lvim/config.lua
