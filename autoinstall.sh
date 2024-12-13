@@ -26,5 +26,8 @@ ln -s ~/dotfiles/asdfrc ~/.asdfrc
 mkdir -p ~/.config/direnv
 ln -s ~/dotfiles/direnv.toml ~/.config/direnv/direnv.toml
 
+mkdir -p ~/.config/btop
+ln -s ~/dotfiles/btop.conf ~/.config/btop/btop.conf
+
 ln -s ~/dotfiles/lazyvim-plugins ~/.config/nvim/lua/plugins
 ln -s ~/dotfiles/lazyvim-config ~/.config/nvim/lua/config
