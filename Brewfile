@@ -40,6 +40,7 @@ brew 'ripgrep'
 brew 'shellcheck'
 brew 'subversion'
 brew 'tmux'
+brew 'tmuxp'
 brew 'wget'
 brew "d12frosted/emacs-plus/emacs-plus@29", args: ["with-modern-doom3-icon", "with-native-comp"]
 brew 'heroku/brew/heroku'

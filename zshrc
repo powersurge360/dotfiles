@@ -89,4 +89,12 @@ export PNPM_HOME="/Users/powersurge360/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
 
+# Disable auto titling for tmux
+export DISABLE_AUTO_TITLE='true'
+
+# Work On a project using tmuxp
+wo() {
+  tmuxp load $1
+}
+
 eval "$(direnv hook zsh)"
