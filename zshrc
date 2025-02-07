@@ -82,7 +82,13 @@ export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 [ $+commands[fzf] ] && source <(fzf --zsh)
 
 [[ -d /usr/local/opt/asdf ]] && . /usr/local/opt/asdf/libexec/asdf.sh
-[[ -d /opt/homebrew/opt/asdf ]] && . /opt/homebrew/opt/asdf/libexec/asdf.sh
+[[ -d /opt/homebrew/opt/asdf/libexec ]] && . /opt/homebrew/opt/asdf/libexec/asdf.sh
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
+# append completions to fpath
+fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
+# initialise completions with ZSH's compinit
+autoload -Uz compinit && compinit
 
 # pnpm
 export PNPM_HOME="/Users/powersurge360/Library/pnpm"
