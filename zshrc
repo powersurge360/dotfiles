@@ -31,7 +31,7 @@ ZSH_THEME="agnoster"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git aws mercurial pip npm python command-not-found github asdf)
+plugins=(git aws mercurial pip npm python command-not-found github)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -81,12 +81,12 @@ export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 [ $+commands[fzf] ] && source <(fzf --zsh)
 
-[[ -d /usr/local/opt/asdf ]] && . /usr/local/opt/asdf/libexec/asdf.sh
-[[ -d /opt/homebrew/opt/asdf/libexec ]] && . /opt/homebrew/opt/asdf/libexec/asdf.sh
+# [[ -d /usr/local/opt/asdf ]] && . /usr/local/opt/asdf/libexec/asdf.sh
+# [[ -d /opt/homebrew/opt/asdf/libexec ]] && . /opt/homebrew/opt/asdf/libexec/asdf.sh
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 # append completions to fpath
-fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
+# fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
 # initialise completions with ZSH's compinit
 autoload -Uz compinit && compinit
 
