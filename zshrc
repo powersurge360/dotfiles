@@ -104,4 +104,4 @@ wo() {
 }
 
 eval "$(direnv hook zsh)"
-eval "$(mise activate zsh)"
+[ $+commands[mise] ] && eval "$(mise activate zsh)"
