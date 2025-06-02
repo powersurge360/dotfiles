@@ -31,7 +31,11 @@ ZSH_THEME="agnoster"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
+<<<<<<< HEAD
 plugins=(git aws mercurial pip npm python command-not-found github mise)
+=======
+plugins=(git aws mercurial pip npm python command-not-found github)
+>>>>>>> 190c1f60a045297156fec8f947e4aaecaad1861f
 
 source $ZSH/oh-my-zsh.sh
 
@@ -83,7 +87,11 @@ export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 # [[ -d /usr/local/opt/asdf ]] && . /usr/local/opt/asdf/libexec/asdf.sh
 # [[ -d /opt/homebrew/opt/asdf/libexec ]] && . /opt/homebrew/opt/asdf/libexec/asdf.sh
+<<<<<<< HEAD
 # export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+=======
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+>>>>>>> 190c1f60a045297156fec8f947e4aaecaad1861f
 
 # append completions to fpath
 # fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
