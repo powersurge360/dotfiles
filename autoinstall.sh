@@ -19,8 +19,8 @@ ln -s ~/dotfiles/zshrc ~/.zshrc
 ln -s ~/dotfiles/vimrc ~/.vimrc
 ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 
-if [ ! -d ~/.doom.d ]; then
-  ln -s ~/dotfiles/doom.d ~/.doom.d
+if [ ! -d ~/.config/doom ]; then
+  ln -s ~/dotfiles/doom.d ~/.config/doom
 fi
 
 # mkdir ~/.vim
