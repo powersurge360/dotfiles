@@ -107,3 +107,5 @@
 
   ;; Syntax highlighting in markdown
   (setq markdown-fontify-code-blocks-natively t))
+
+(add-hook 'after-init-hook #'global-mise-mode)
