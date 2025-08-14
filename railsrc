@@ -1,3 +1,2 @@
---css=tailwind
---js=esbuild
+--css=sass
 --template=~/dotfiles/rails_template.rb
