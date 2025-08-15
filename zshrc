@@ -103,5 +103,4 @@ wo() {
   tmuxp load $1
 }
 
-eval "$(direnv hook zsh)"
 [ $+commands[mise] ] && eval "$(mise activate zsh)"
