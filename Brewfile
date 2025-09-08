@@ -1,7 +1,5 @@
 tap "d12frosted/emacs-plus"
 tap 'heroku/brew'
-tap 'homebrew/bundle'
-tap 'homebrew/services'
 brew 'act'
 brew 'mise'
 brew 'btop'
@@ -41,7 +39,7 @@ brew 'subversion'
 brew 'tmux'
 brew 'tmuxp'
 brew 'wget'
-brew "d12frosted/emacs-plus/emacs-plus@30", args: ["with-modern-doom3-icon", "with-native-comp"]
+brew "d12frosted/emacs-plus/emacs-plus@30", args: ["with-modern-doom3-icon"]
 brew 'heroku/brew/heroku'
 cask 'kitty'
 cask 'rar'
