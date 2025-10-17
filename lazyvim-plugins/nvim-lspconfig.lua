@@ -4,12 +4,13 @@ return {
 		opts = {
 			servers = {
 				ruby_lsp = {
-					-- mason = false,
-					-- cmd = { vim.fn.expand("~/.asdf/shims/ruby-lsp") },
+					mason = false,
+					cmd = { "mise", "x", "--", "ruby-lsp" },
 				},
 				rubocop = {
-					-- mason = false,
-					-- cmd = { vim.fn.expand("~/.asdf/shims/rubocop") },
+					mason = false,
+					-- cmd = { "rubocop" },
+					cmd = { "bundle", "exec", "rubocop", "--lsp" },
 				},
 			},
 		},
