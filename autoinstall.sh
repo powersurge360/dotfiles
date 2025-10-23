@@ -32,6 +32,8 @@ mkdir -p ~/.config/kitty
 ln -s ~/dotfiles/kitty.conf ~/.config/kitty/kitty.conf
 ln -s ~/dotfiles/railsrc ~/.railsrc
 ln -s ~/dotfiles/asdfrc ~/.asdfrc
+ln -s ~/dotfiles/rubocop.yml ~/.rubocop.yml
+ln -s ~/dotfiles/default-gems ~/.default-gems
 mkdir -p ~/.config/direnv
 ln -s ~/dotfiles/direnv.toml ~/.config/direnv/direnv.toml
 

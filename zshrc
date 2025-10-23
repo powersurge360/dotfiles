@@ -103,4 +103,4 @@ wo() {
   tmuxp load $1
 }
 
-[ $+commands[mise] ] && eval "$(mise activate zsh)"
+alias terraform=tofu
