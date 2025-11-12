@@ -4,3 +4,5 @@
 
 vim.opt.relativenumber = false
 vim.cmd([[autocmd FileType ruby setlocal indentkeys-=.]])
+vim.cmd([[autocmd FileType ruby setlocal indentkeys-=0{]])
+vim.g.lazyvim_ruby_lsp = "solargraph"
