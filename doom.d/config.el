@@ -109,3 +109,5 @@
   (setq markdown-fontify-code-blocks-natively t))
 
 (add-hook 'after-init-hook #'global-mise-mode)
+
+(setq-default lsp-disabled-clients '(rubocop-ls))

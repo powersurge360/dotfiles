@@ -31,7 +31,7 @@ ZSH_THEME="agnoster"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git aws mercurial pip npm python command-not-found github mise)
+plugins=(git aws mercurial pip npm python command-not-found github)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -39,6 +39,11 @@ source $ZSH/oh-my-zsh.sh
 if [ -f /etc/profile ]; then
     PATH=""
     source /etc/profile
+fi
+
+if [[ -z "$ZPROFILE_SOURCED" ]]; then
+    source ~/.zprofile
+    export ZPROFILE_SOURCED=1
 fi
 
 # Customize to your needs...
@@ -104,3 +109,4 @@ wo() {
 }
 
 alias terraform=tofu
+eval "$(mise activate zsh)"
