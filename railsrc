@@ -1,2 +1,4 @@
---css=sass
+--css=tailwind
+--js=esbuild
 --template=~/dotfiles/rails_template.rb
+--skip-tests
