@@ -35,8 +35,7 @@ brew 'subversion'
 brew 'tmux'
 brew 'tmuxp'
 brew 'wget'
-brew "d12frosted/emacs-plus/emacs-plus@30", args: ["with-modern-doom3-icon"]
-brew 'heroku/brew/heroku'
+brew "d12frosted/emacs-plus/emacs-plus@30"
 cask 'kitty'
 cask 'rar'
 cask 'font-fira-code-nerd-font'
