@@ -6,6 +6,7 @@
 	editor = nvim
 [alias]
 	d = difftool
+	clean-up = !git fetch -p && git for-each-ref --format=\"%(refname:short) %(upstream:track)\" refs/heads | awk \"\\$2==\\\"[gone]\\\" {print \\$1}\" | xargs -r git branch -D
 [difftool]
 	prompt = false
 [push]
@@ -27,3 +28,5 @@
 	required = true
 [init]
 	defaultBranch = main
+[fetch]
+	prune = true
